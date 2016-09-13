@@ -1,0 +1,38 @@
+.contact {margin-left: 30px; width: 820px; position: relative; border-top: 1px solid #fff; float: left; color:#414141;background: url('../img/map.gif') no-repeat;z-index: 4;}
+    .contact .contactForm { width: 417px; float: left; position: relative; }
+
+    .contact .labelsColumn { width: 120px; float: left; padding-right: 10px; }
+        .contact .labelsColumn label { height: 23px; line-height: 23px; display: block; padding-left: 14px; margin-top: 5px; color: #5d5d5b; background: url('../static/06_lienhe.gif') left 7px no-repeat; }
+        .contact .labelsColumn label span{color: #ff7200;}
+		
+    .contact .textBoxsColumn { width: 283px; float: right; }
+        .contact .textBoxsColumn .textbox, .contact .RadInputMgr_Default { width: 270px; height: 21px; border: 1px solid #92B5EC; padding: 0 5px; margin-top: 5px;  float: left; font: 12px/18px arial; color: #2b2b2b;}
+    .textbox:hover{color: red}
+        .contact .RadInput_Default .riError, .contact .RadInput_Error_Default { border: 1px solid red; color: #6E6E6E; font-style: italic; }
+
+    .contact .validator { width: 15px; height: 15px; display: block; padding-top: 8px; float: left; }
+    .contact .textBoxsColumn .textboxMultiline { width: 270px; height: 88px; border: 1px solid #92B5EC; background-color: #f3f3f3; padding: 0 5px; margin-top: 5px; float: left; font: 12px/18px arial; color: #fff; color: #6E6E6E; }
+    /*Info*/
+    .contact .info { width: 356px; float: left; }
+    .contact .phone-office { float: left; width: 100%; margin-top: 20px; margin-bottom: 20px; }
+        .contact .phone-office .title-phone, #map1 .map-title { color: #9e241e; font-weight: bold; text-transform: uppercase; font-size: 12px; }
+        .contact .phone-office .content-phone { float: left; width: 100%; }
+            .contact .phone-office .content-phone ul li { background: url(../static/icon-phone.png) no-repeat left center transparent; padding-left: 20px; width: 100%; border-bottom: 1px solid #eaeae1; line-height: 30px; position: relative; }
+                .contact .phone-office .content-phone ul li.last { border-bottom: none; }
+                .contact .phone-office .content-phone ul li span { text-align: left; }
+                    .contact .phone-office .content-phone ul li span.value { right: 20px; position: absolute; line-height: 30px; }
+    .contact span { line-height: 20px; }
+        .contact .info .item .email a, .contact span.name { color: #813903; font-size: 12px; font-weight: bold; text-transform: uppercase; }
+            .contact .info .item .email a:hover { color: red; }
+    .contact .info .item { margin-top: 20px; position: relative; }
+        .contact .info .item .address .label { display: block; font: bold 12px/18px arial; text-transform: uppercase; color: #0084cb; }
+        .contact .info .item .address .value { font-weight: bold; color: #5a5a5a; }
+
+.contact-info { float: left;  margin-top: 10px;width: 395px; }
+    .contact-info .item { float: left; width: 100%; margin-bottom: 20px;  }
+
+/*Button Viet - English*/
+.contact .btncontact {  }
+    .contact .btncontact a { padding: 5px 25px; background-color: #faa61a; color: #fff; font-weight: bold; display: inline-block; margin-left:5px; }
+        .contact .btncontact a:hover { text-decoration:none; }
+.map {margin-left: 30px; margin-top: 30px;  margin-bottom: 30px;}

@@ -1,0 +1,16 @@
+#menu ul {display:inline;  }
+#menu ul li {
+	list-style:none; float:left;
+	margin-right:0px; margin-bottom:1px;	
+	width:119px; border-left: solid 1px #FFF
+	;
+}
+#menu ul li a { background-color:#f4f4f4; color:#09F; font-weight: bold;
+				text-decoration:none; padding-top:9px; padding-bottom:10px;
+				display:block; text-align:center;font-size:12px	;border: 1px solid #CCCCCC;}
+#menu ul li a:hover{ background-color:whiteSmoke; color:#6C3} 
+.hidden{ display:none}
+#submenu{position:absolute; display:none; z-index:2;text-align:center}
+#submenu a {font-weight:bold; color:#09F; padding-top:8px; padding-bottom:8px;  
+			text-decoration:none; display:block;background-color:#f4f4f4;font-size:12px;border: 1px solid #CCCCCC;margin-bottom:1px;}
+#submenu a:hover { background-color:whiteSmoke; color:#6C3 }

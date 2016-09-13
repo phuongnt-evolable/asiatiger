@@ -1,0 +1,267 @@
+.tab-page-content-area {
+    background-color: none;
+}
+.box-3-content .content {
+    float: left;
+    width: 225px;
+    font-family: opensans-regular;
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: #878787;
+    }
+.box-service-footer .content img
+{
+    float: left;
+}
+
+.box-service-footer .content {
+    height: 90px;
+    margin-bottom: 30px;
+}
+
+.wrap-content {
+    width: 780px;
+    margin: auto;
+    position: relative;
+    margin-bottom:20px;
+    float:left;
+}
+.table-content {
+    padding: 20px 20px 5px 20px;
+}
+
+/**************************** First row *****************/
+.ssl-table-price-row-first .mailplusChid {
+   
+    background: #ffffff;
+    height: 30px;
+    border-bottom: dotted 1px #dbdbdb;
+    font-family: arial;
+    font-size: 12px;
+    color: #303030;
+    border-left: 1px solid #dbdbdb;
+    font-weight: bold;   
+    line-height: 30px;
+    padding-left: 10px;
+}
+.ssl-table-price-row-first {
+    float: left;
+    width: 19%;
+    text-align: left;
+    color: #363636;
+    border-right: solid 1px #fff;
+}
+.ssl-table-price-row-first .ssl-table-price {
+    color: #ffffff !important;
+    font-size: 14px !important;
+    font-family: opensans-regular !important;
+    line-height: 23px !important;
+}
+
+.ssl-table-price-row-first .ssl-table-price span {
+    font-size: 18px !important;
+    font-family: opensans-semibold !important;
+}
+
+.ssl-table-price-row-first .maiplusName {
+    font-family: arial;
+    color: #000000;
+    padding-top: 17px;
+    height: 32px !important;
+    position: relative;
+    background: #fff;
+    font-size: 14px;    
+    border-left: solid 1px #dbdbdb;
+    font-weight: bold;
+    text-align: center;
+}
+.ssl-table-price-row-first .mailplusChid span {
+    font-family: arial;
+}
+
+.ssl-table-price-row-first .lastChild {
+    height: 42px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: #f1f1f1;
+}
+.ssl-table-price-row-first .mailplusChid .t1 {
+    margin: 0px;
+    font-family: opensans-bold;
+    font-size: 12px;
+}
+.ssl-table-price-row-first .mailplusChid .t2 {
+    margin: -5px 0 0 0;
+    font-family: arial;
+    font-size: 12px;
+}
+.ssl-table-price-row-first div, .ssl-table-price-row-title-first div {
+    padding: 5px 0;
+}
+/***************************** Row ***********************/
+.ssl-table-price-row {
+    float: left;
+    width: 19%;
+    text-align: center;
+    color: #363636;
+    border-right: solid 1px #fff;
+}
+.ssl-table-price-row .ssl-table-price {
+    color: #ffffff !important;
+    font-size: 14px !important;
+    font-family: Arial !important;
+    line-height: 23px !important;
+}
+
+.ssl-table-price-row .ssl-table-price span {
+    font-size: 18px !important;
+    font-family: arial !important;
+}
+
+.ssl-table-price-row .maiplusName {
+    font-family: arial;
+    color: #1686cc;
+    padding-top: 17px;
+    height: 30px !important;
+    position: relative;
+    background: #f1f1f1;
+    font-size: 18px;
+    border-bottom: dotted 1px #dbdbdb;
+    font-weight: bold;
+}
+
+.ssl-table-price-row:hover .maiplusName {  
+    height: 43px !important;
+    margin-top: -13px; 
+   	background-color: #3da6bd;
+   	color:#fff;
+   	
+}
+.ssl-table-price-row .mailplusChid {
+    
+    line-height: 30px;
+    background: #f1f1f1;
+    height: 30px;
+    border-bottom: dotted 1px #dbdbdb;
+    font-family: arial;
+    font-size: 12px;
+    color: #303030;
+   
+    vertical-align: middle;
+}
+
+.ssl-table-price-row .mailplusChid span {
+    font-family: arial;
+}
+
+.ssl-table-price-row .lastChild {
+    line-height: 44px;
+    background: #f1f1f1;
+    height: 44px;
+    border-bottom: dotted 1px #dbdbdb;
+    font-family: arial;
+    font-size: 12px;
+    color: #303030;
+}
+.ssl-table-price-row:hover .lastChild {
+    background-color: #f1f1f1;  
+}
+
+.ssl-table-price-row:hover .mailplusChid {
+    	background-color: #3da6bd;
+    	color:#fff;
+}
+.ssl-table-price-row .mailplusChid .t1 {
+    margin: 0px;
+    font-family: opensans-bold;
+    font-size: 12px;
+}
+.ssl-table-price-row .mailplusChid .t2 {
+    margin: -5px 0 0 0;
+    font-family: opensans-regular;
+    font-size: 12px;
+}
+.ssl-table-price-row div, .ssl-table-price-row-title div {
+    padding: 5px 0;
+}
+.ssl-table-price-row .ssl-button {
+    padding: 10px 0;
+}
+.ssl-table-price-row div {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.ssl-table-price-row:hover .ssl-price {
+}
+.ssl-table-price-row .ssl-button span {
+    border: 1px solid #fff;
+    color: #858585;
+    display: inline-block;
+    line-height: 22px;
+    padding: 0 15px;
+}
+
+.ssl-table-price-row .ssl-button input {
+    border: 1px solid #fff;
+    color: #858585;
+    height: 26px;
+    background-color: #fff;
+    padding: 0 20px;
+    margin: 0;
+    cursor: pointer;
+    -webkit-box-shadow: 2px 1px 3px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 2px 1px 3px 0px rgba(50, 50, 50, 0.5);
+}
+
+.ssl-table-price-row .ssl-button label {
+    border: 1px solid #8a8a8a;
+    display: inline-block;
+}
+
+.ssl-table-price-row:hover .ssl-button label {
+    border-color: #e50d08;
+    cursor: pointer;
+}
+
+.ssl-table-price-row:hover .ssl-button input {
+    background: #e50d08;
+    border-color: #fff;
+    color: #fff;
+}
+.ssl-table-price-row .ssl-button a {
+    border: 1px solid #8a8a8a;
+    display: inline-block;
+    -webkit-box-shadow: 2px 1px 3px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 2px 1px 3px 0px rgba(50, 50, 50, 0.5);
+}
+
+.ssl-table-price-row div, .ssl-table-price-row-title div {
+    line-height: 22px;
+}
+
+.ssl-table-price-row .ssl-name, .ssl-table-price-row-title .ssl-name {
+    height: 44px;
+}
+ssl-button {
+    padding: 10px 0 5px;
+}
+a.newButton {
+    background-color: #fff;
+    border: 1px solid #8f8f8f;
+    color: #787878;
+    font-family: Arial;
+    font-size: 14px;
+    height:30px;
+    padding: 5px;
+    width:90px;  
+    text-decoration: none;    
+}
+
+a.newButton:hover{
+    background-color: #3da6bd;
+    border: 2px solid #fff;
+    color: #ffffff;   
+    margin: 0;    
+    height:30px;
+    width:90px; 
+}

@@ -1,0 +1,118 @@
+/* CSS Document */
+#wrapper{ width:100%; margin-left: auto;margin-right: auto;font-family:Arial, Helvetica, sans-serif}
+#header{ height:50px; background-color: silver; }
+#header h1{ color:#FF8000; font-size:26px; margin-top:0px; padding-top:10px; float:left}	
+#header #chao{	text-align:right; font-weight: bold; color: #CF0;font-size: 16px; margin-right:5px;}
+#header #thoat{ margin-top:10px} 
+#header #thoat a{color: #CF0;text-decoration: none; }
+#header #thoat a:hover{ color:#F0C; text-decoration:underline}
+
+#thanhmenu{ height:40px; min-height:40px;margin-top:1px; }	
+
+#content{
+}
+
+#thanhphantrang{text-align:right;clear:both;padding-right:20px;margin-top:10px;margin-bottom:10px}
+#thanhphantrang a {padding: 3px 7px;margin-right:3px;font-weight:bold;border:1px solid #CCCCCC;border-radius:4px;text-decoration:none;color:#333}
+#thanhphantrang a.selected,#thanhphantrang a:hover{
+	background-color:#0099FF;
+	color:#FFFFFF;
+}
+.chan {background-color: #DFFEFF;} 
+.le {background-color: #E5E5E5;}
+
+#table_list { width:990px}
+#table_list td {	border: 1px solid #9CC;}
+#table_list a {color: #000000;	text-decoration: none;}
+#table_list a:hover {color: #990000;text-decoration: underline;}
+#table_list .caption {background-color: #D3DCE3; }
+
+.txt_them {height: 22px; width: 250px;border: 2px inset #666666; background-color:#999}
+.txt_noidung {min-height: 150px;width: 250px;border: 2px inset #666666;background-color:#999}
+#form1 caption {
+	color: #FFFF00;	background-color: #006699;
+	font-weight: bold;padding-top: 7px;
+	padding-bottom: 7px; margin-left:0px;margin-bottom: 10px;
+}
+#noidung_them {
+	background-color: #006699;
+	min-height: 215px;width: 750px;
+	padding: 5px;margin-right: auto;margin-left: auto;margin-top: 30px;
+}
+#noidung_them1 {
+	background-color: #FFFFFF;
+	min-height: 205px;
+	margin-top: 2px; margin-right: 4px;
+	margin-bottom: 2px; margin-left: 4px;
+}
+.mota { width:500px}
+.hidden{ display:none}
+#tong {float: left;width: 180px;text-align: left;	font-weight: bold;}
+.chan {background-color:#DFF2F2}
+#contentnew th{background-color:#F63}
+h2 {color:#009}
+.error {font-style:italic;color:red}
+
+
+
+
+
+#admin_navigation{border: 1px solid #ccc;
+	background-color: #f4f4f4;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom:20px;
+	}
+#admin_navigation .save{background-image:url(../img/save.png);width:32px;height:32px;background-color:#f4f4f4;border:none}	
+#admin_navigation .cancel{background-image:url(../img/cancel.png);width:32px;height:32px;background-color:#f4f4f4;border:none}
+#admin_navigation .new{background-image:url(../img/add.jpg);width:32px;height:32px;background-color:#f4f4f4;border:none}
+#admin_navigation span {font-size:13px}	
+#admin_navigation h3{padding-left:20px;color:#146295}	
+#navi .save{background-image:url(../img/save.png);width:32px;height:32px;background-color:#f4f4f4;border:none}	
+#navi .cancel{background-image:url(../img/cancel.png);width:32px;height:32px;background-color:#f4f4f4;border:none}
+#navi .new{background-image:url(../img/add.jpg);width:32px;height:32px;background-color:#f4f4f4;border:none}
+#navi span {font-size:13px}	
+#navi h3{padding-left:20px;color:#146295}	
+#main_admin{border: 1px solid #ccc;
+	padding: 0 8px;
+	background-color: #f4f4f4;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding-bottom:10px ;
+	font-size:14px;
+	padding-top:10px}
+#main_admin table {width:100%}	
+#main_admin table tr td{padding:7px}		
+#main_admin table tr td.left{width:20%}	
+#main_admin textarea{width:300px;border:1px #CCC solid;height:55px}
+#main_admin input.tf {width:300px;height:20px;border:1px #CCC solid}
+#main_admin input.tt {width:100px;height:20px;border:1px #CCC solid}
+
+#main_left{width:60%;float:left}
+#main_right{width:40%;float:left}
+
+fieldset .details_form{
+	margin: 10px;
+overflow: hidden;
+background-color: white;
+padding: 5px 17px 17px 17px;
+}
+.tieudetable{background-color:#06F;height:30px;color:#FFF}
+.clear{clear:both;margin-bottom:20px}	
+#idTG{
+     display: inline;
+    width: 200px; 
+}
+	
+#idSach,#idDMs {
+   display: inline-block;
+    width: 250px;
+}
+#idDM {
+   display: inline-block;
+    width: 300px;
+}
+.true{background-color: #66FFFF;}
+.false{background-color: #FFFFCC;}

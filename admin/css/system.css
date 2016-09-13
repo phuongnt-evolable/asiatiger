@@ -1,0 +1,14 @@
+fieldset{
+display: block;
+-webkit-margin-start: 2px;
+-webkit-margin-end: 2px;
+-webkit-padding-before: 0.35em;
+-webkit-padding-start: 0.75em;
+-webkit-padding-end: 0.75em;
+-webkit-padding-after: 0.625em;
+border: 1px #CCC solid;
+background-color:white;
+padding: 5px 17px 17px 17px;	
+}
+legend{color:#146295;font-size:16px}
+.clr{clear:both}

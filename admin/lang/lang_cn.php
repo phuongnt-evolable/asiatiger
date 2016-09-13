@@ -1,0 +1,74 @@
+<?php
+    
+    define("sanpham", "產品介紹");
+    define("dssanpham", "產品管理");
+    define("themsp", "增加產品");    
+    define("xemds", "查看明細");
+    define("danhmuc", "項目");
+    define("qldanhmuc", "管理項目");
+    define("themdanhmuccha", "主要項目");
+    define("themdanhmuccon", "添加子类");
+    define("xem", "查看");
+    define("tendailoan", "中文名稱");
+    define("tenvietnam", "越文名稱");
+    define("tentienganh", "英文名稱");
+    define("gioithieucn", "介 紹(台灣)");
+    define("gioithieuvi", "介 紹 (越南)");
+    define("gioithieuen", "介 紹 (用英語)");
+    define("cty", "公司");
+    define("themcty", "添加公司");
+    define("dscty", "看到公司名單");
+    
+    define("hinhanh", "圖片");
+    define("gia", "價格");
+    define("gianho", "少杯價錢");
+    define("gialon", "大杯價錢");
+    define("mota", "Mô tả");
+    define("chonhinh", "選擇圖片");
+    define("themmoi", "新增");
+    define("baiviet", "文件");
+    define("tintuc", "新闻");
+    define("dsbaiviet", "管理文件");
+    define("thembaiviet", "增加新聞");
+    define("tieudedailoan", "中文標題");
+    define("tieudevietnam", "英文標題");
+    define("nddailoan", "中文內容");
+    define("ndvietnam", "越文內容");
+    define("ndtienganh", "內容英語");
+    define("motacn", "說明台灣");
+    define("motavi", "說明越南");
+    define("motaen", "說明英語");
+    define("dsduan", "項目列表 ");
+    define("themduan", "添加項目");
+    define("duandalam", "該項目進行了");
+
+    define("giohang", "訂單");
+    define("dsgiohang", "管理訂單");
+    define("stt", "STT");
+    define("ten", "姓名");
+    define("dienthoai", "電話");
+    define("email", "電子郵件");    
+    define("diachi", "地址");
+    define("fax", "傳真");
+    define("website", "網站");
+    define("ngaydathang", "訂購日期");
+    define("xemdathang", "查看訂單");
+    define("tongtien", "總數");
+    define("tong", "總數");
+    define("trangthai", "狀態");
+    define("donhangchitiet", "訂單詳細");
+    define("tongsldathang", "訂購產品數量");
+    define("soluong", "數量");
+    define("dongia", "單價");
+    define("thanhtien", "合計");
+    define("capnhattrangthai", "更新訂單狀態");
+    define("tensanpham", "产品名称");
+    define("dathanhtoan", "已付款");
+    define("choxuly", "處理中");
+    
+    define("nguoidung", "使用者");
+    define("thaymk", "更換密碼");
+    define("mkcu", "舊密碼");
+    define("mkmoi", "新密碼");
+    define("nhaplaimkmoi", "重打新密碼");
+?>
