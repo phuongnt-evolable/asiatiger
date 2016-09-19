@@ -9,29 +9,23 @@
     
     $cate_tim=$_GET['category_id'];  
     $tukhoa=$_GET['SearchText'];
-    
-    
 
     $page_show = 5;
 
     $limit = 10;
-    //echo $cate_id;
     if($cate_tim==2){
-        $trangs = $modelCongTy->getListCongTyByTheLoai_TuKhoa($tukhoa,$lang,-1, -1);
+        $arr_tukhoa = explode(" ", $tukhoa);
+        foreach ($arr_tukhoa as $tu_khoa) {
+            $total_record_sql = $modelCongTy->getCountSumaryCongTyByCondition($tu_khoa, $lang, -1, -1);
+        }
     }  else {
-        $trangs = $modelProduct->getProductByTuKhoa($tukhoa,$lang,-1, -1);
-        
+        $total_record_sql = $modelProduct->getProductByTuKhoa($tukhoa,$lang,-1, -1);
     }
-    //$trangs = $modelCongTy->getListCongTyByTheLoai( $cate_id,-1, -1);
-    
-    $total_record_1 = mysql_num_rows($trangs);
-    //$total_record_2 = mysql_num_rows($trangs1);
-    
-   $total_record = $total_record_1 + $total_record_2;
+
+    $total_record = mysql_fetch_assoc($total_record_sql);
+    $total_record = $total_record['record_count'];
 
     $total_page = ceil($total_record / $limit);
-    
-    //echo $page1=$tmp_uri[2]; 
     $page=$_GET[page];
     if ($page > 1) {
         $page = $page;
@@ -41,8 +35,11 @@
 
     $offset = $limit * ($page - 1);
     
-    if($cate_tim == 2){  
-        $list_trang = $modelCongTy->getListCongTyByTheLoai_TuKhoa( $tukhoa,$lang,$offset, $limit);
+    if($cate_tim == 2){
+        $arr_tukhoa = explode(" ", $tukhoa);
+        foreach ($arr_tukhoa as $tu_khoa){
+            $list_trang = $modelCongTy->getListCongTyByTheLoai_TuKhoa($tu_khoa,$lang,$offset, $limit);
+        }
     }else{
         $list_trang = $modelProduct->getProductByTuKhoa( $tukhoa,$lang,$offset, $limit);
         

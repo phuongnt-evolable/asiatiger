@@ -122,16 +122,18 @@ class Congty extends Db {
         }        
         return $arrReturn;
     }
+   
+    function getCountSumaryCongTyByCondition($tukhoa,$lang,$offset = -1, $limit = -1){
+	$sql = "SELECT  COUNT(*) as record_count 
+                FROM  congty 
+                WHERE  GioiThieu_cn LIKE '%$tukhoa%' or GioiThieu_vi LIKE '%$tukhoa%' or GioiThieu_en LIKE '%$tukhoa%' or TenCT_cn LIKE '%$tukhoa%' or TenCT_vi LIKE '%$tukhoa%' or TenCT_en LIKE '%$tukhoa%' ORDER BY top DESC, HinhDaiDien DESC
+		";
+        $rs = mysql_query($sql) or die(mysql_error());
+        return $rs;
+    }
     
     function getListCongTyByTheLoai_TuKhoa($tukhoa,$lang, $offset = -1, $limit = -1) {
         $sql = "SELECT * FROM congty WHERE  GioiThieu_cn LIKE '%$tukhoa%' or GioiThieu_vi LIKE '%$tukhoa%' or GioiThieu_en LIKE '%$tukhoa%' or TenCT_cn LIKE '%$tukhoa%' or TenCT_vi LIKE '%$tukhoa%' or TenCT_en LIKE '%$tukhoa%' ORDER BY top DESC, HinhDaiDien DESC   ";
-        /*if($lang=='vi'){
-            $sql = "SELECT * FROM congty WHERE MoTa_vi LIKE '%$tukhoa%'  or TenCT_vi LIKE '%$tukhoa%' ORDER BY top DESC congty_id DESC   ";             
-        }elseif ($lang=='cn') {
-            $sql = "SELECT * FROM congty WHERE MoTa_cn LIKE '%$tukhoa%'  or TenCT_cn LIKE '%$tukhoa%' ORDER BY congty_id DESC   "; 
-        }  else {
-            $sql = "SELECT * FROM congty WHERE MoTa_en LIKE '%$tukhoa%'  or TenCT_en LIKE '%$tukhoa%' ORDER BY congty_id DESC   "; 
-        }*/
         
         if ($limit > 0 && $offset >= 0)
         $sql .= " LIMIT $offset,$limit";
