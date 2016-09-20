@@ -8,23 +8,25 @@
      $link=$arr[1];
     
     $cate_tim=$_GET['category_id'];  
-    $tukhoa=$_GET['SearchText'];
-
+    $tukhoa =$_GET['SearchText'];
+    $tukhoa1 = $tukhoa;
     $page_show = 5;
 
     $limit = 10;
+    $total_record = 0;
     if($cate_tim==2){
+        $total_record_sql = $modelCongTy->getListCongTyByTheLoai_TuKhoa($tukhoa1, $lang, -1, -1);
+
         $arr_tukhoa = explode(" ", $tukhoa);
         foreach ($arr_tukhoa as $tu_khoa) {
-            $total_record_sql = $modelCongTy->getCountSumaryCongTyByCondition($tu_khoa, $lang, -1, -1);
+            if(!empty($tu_khoa)){
+                $total_record_sql += $modelCongTy->getListCongTyByTheLoai_TuKhoa($tu_khoa, $lang, -1, -1);
+            }
         }
     }  else {
         $total_record_sql = $modelProduct->getProductByTuKhoa($tukhoa,$lang,-1, -1);
     }
-
-    $total_record = mysql_fetch_assoc($total_record_sql);
-    $total_record = $total_record['record_count'];
-
+    $total_record = count($total_record_sql);
     $total_page = ceil($total_record / $limit);
     $page=$_GET[page];
     if ($page > 1) {
@@ -32,20 +34,21 @@
     } else {
         $page = 1;
     }
-
     $offset = $limit * ($page - 1);
     
     if($cate_tim == 2){
+        $list_trang = $modelCongTy->getListCongTyByTheLoai_TuKhoa($tukhoa1,$lang,$offset, $limit);
         $arr_tukhoa = explode(" ", $tukhoa);
         foreach ($arr_tukhoa as $tu_khoa){
-            $list_trang = $modelCongTy->getListCongTyByTheLoai_TuKhoa($tu_khoa,$lang,$offset, $limit);
+            if(!empty($tu_khoa)){
+                $list_trang += $modelCongTy->getListCongTyByTheLoai_TuKhoa($tu_khoa,$lang,$offset, $limit);
+            }
         }
     }else{
         $list_trang = $modelProduct->getProductByTuKhoa( $tukhoa,$lang,$offset, $limit);
         
     }
-    
-//echo $lang;
+
 ?>
 <style>
     .lienhe a {
@@ -192,7 +195,7 @@
                                 <!-- Hien ds cty khong co Hinh Dai Dien -->
                                 <?php  
                                     if($total_record >0){
-                                    while ($row = mysql_fetch_assoc($list_trang)) { 
+                                    foreach ($list_trang as $row) {
                                         $url1= str_replace("http://www.", "", $row['Website']);
                                         $url2= str_replace("http://", "", $url1);
                                         $url3= str_replace("/", "", $url2);
@@ -426,9 +429,7 @@
                                         <?php
                                     // $i = ($page-1)*$limit;
                                          $arr_tu_khoa = explode(" ", $tukhoa);
-                                        //var_dump($arr_tu_khoa);
                                         foreach($arr_tu_khoa as $val){
-                                            //var_dump($val);
                                            // echo $val.'---';
                                             $list_trang1 = $modelProduct->getProductByTuKhoa($val,$lang,-1, -1);
                                         

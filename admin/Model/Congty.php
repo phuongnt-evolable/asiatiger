@@ -124,21 +124,30 @@ class Congty extends Db {
     }
    
     function getCountSumaryCongTyByCondition($tukhoa,$lang,$offset = -1, $limit = -1){
-	$sql = "SELECT  COUNT(*) as record_count 
+        $arrReturn = array();
+	    $sql = "SELECT  congty_id,COUNT(*) as record_count
                 FROM  congty 
                 WHERE  GioiThieu_cn LIKE '%$tukhoa%' or GioiThieu_vi LIKE '%$tukhoa%' or GioiThieu_en LIKE '%$tukhoa%' or TenCT_cn LIKE '%$tukhoa%' or TenCT_vi LIKE '%$tukhoa%' or TenCT_en LIKE '%$tukhoa%' ORDER BY top DESC, HinhDaiDien DESC
 		";
         $rs = mysql_query($sql) or die(mysql_error());
-        return $rs;
+        $total_record = mysql_fetch_assoc($rs);
+        $total_record = $total_record['record_count'];
+        $congty_id = $total_record['congty_id'];
+        $arrReturn[]= $total_record;
+        return $arrReturn;
     }
     
     function getListCongTyByTheLoai_TuKhoa($tukhoa,$lang, $offset = -1, $limit = -1) {
+        $arrResult = array();
         $sql = "SELECT * FROM congty WHERE  GioiThieu_cn LIKE '%$tukhoa%' or GioiThieu_vi LIKE '%$tukhoa%' or GioiThieu_en LIKE '%$tukhoa%' or TenCT_cn LIKE '%$tukhoa%' or TenCT_vi LIKE '%$tukhoa%' or TenCT_en LIKE '%$tukhoa%' ORDER BY top DESC, HinhDaiDien DESC   ";
-        
         if ($limit > 0 && $offset >= 0)
         $sql .= " LIMIT $offset,$limit";
         $rs = mysql_query($sql) or die(mysql_error());
-        return $rs;
+        while($row = mysql_fetch_assoc($rs)){
+            $congty_id = $row['congty_id'];
+            $arrResult[$congty_id] = $row;
+        }
+        return $arrResult;
     }
     function getListCongTyByTheLoaiCoImg($cate_id = -1, $offset = -1, $limit = -1) {
         $arrReturn = array();        

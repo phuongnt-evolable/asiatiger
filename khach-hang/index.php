@@ -354,15 +354,15 @@
             
             var jsonString = JSON.stringify(cate_id);
                        
-			if( phone=="" || email=="" )
+			if( phone=="" || email=="" || ten_cty_vi=='' || ten_cty_cn =='' || ten_cty_en =='' || diachi_vi =='' || diachi_cn =='' || diachi_en =='' || quocgia == 0)
 			{			
 				if(lang=='vi'){
-                                    alert("Bạn chưa nhập đầy đủ thông tin !");
-                                }if(lang=='cn'){
-                                    alert("您 沒 有 輸 入 足 夠 的 信 息！");
-                                }if(lang=='en'){
-                                    alert("You have not entered enough information !");
-                                }
+                    alert("Bạn chưa nhập đầy đủ thông tin !");
+                }if(lang=='cn'){
+                    alert("您 沒 有 輸 入 足 夠 的 信 息！");
+                }if(lang=='en'){
+                    alert("You have not entered enough information !");
+                }
 				
 				if(email==""){
 					$("#email").addClass("false");
@@ -370,13 +370,13 @@
 					$("#email").removeClass("false");
 				}
 				if(quocgia=="0"){
-                                    if(lang=='vi'){
-                                        alert("Bạn chưa chọn quốc gia !");
-                                    }if(lang=='cn'){
-                                        alert("您 沒 有 選 擇 國 家！");
-                                    }if(lang=='en'){
-                                        alert("You have not selected countries !");
-                                    }
+                    if(lang=='vi'){
+                        alert("Bạn chưa chọn quốc gia !");
+                    }if(lang=='cn'){
+                        alert("您 沒 有 選 擇 國 家！");
+                    }if(lang=='en'){
+                        alert("You have not selected countries !");
+                    }
 				}else{
 					$("#quocgia").removeClass("false");
 				}
