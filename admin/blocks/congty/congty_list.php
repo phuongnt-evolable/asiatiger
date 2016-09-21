@@ -2,6 +2,7 @@
 $link = "index.php?com=congty_list";
     if(isset($_GET['tukhoa'])){
          $tukhoa = $_GET['tukhoa'];
+        $link.="&tukhoa=$tukhoa";
      }   
 
     if (isset($_GET['cate_id']) && $_GET['cate_id'] > 0) {
@@ -26,8 +27,11 @@ $link = "index.php?com=congty_list";
     }
     
 
-
-    $total_record = mysql_num_rows($trangs);
+    if($cate_id < 0){
+        $total_record = count($trangs);
+    }else{
+        $total_record = mysql_num_rows($trangs);
+    }
 
     $total_page = ceil($total_record / $limit);
 
@@ -44,11 +48,9 @@ $link = "index.php?com=congty_list";
         $list_trang = $modelCongTy->getListCongTyByTheLoai_TuKhoa($tukhoa,$lang, $offset, $limit);
     }else{
          if($cate_id > 0){
-            //echo "123";die(113);
             $list_trang = $modelCongTy->getListCongTyByTheLoaiAdmin($cate_id,$offset,$limit);
         }else{
             $list_trang = $modelCongTy->getListCongTyByCategoryAdmin( $offset, $limit);
-            //$list_trang = $modelCongTy->getCongTy($offset, $limit);
         }
     }
    
@@ -109,7 +111,7 @@ $link = "index.php?com=congty_list";
 
                                 <?php  } ?> 
                           </select>
-                                <input type="submit" name="btnSubmit" id="btnSubmit" value="  {xem} " />
+                                <input type="submit" id="btnSubmit" value="  {xem} " />
                                 <br /><br />
                                 <input type="hidden" name="com" value="congty_list"  />
                             </form>
@@ -135,7 +137,7 @@ $link = "index.php?com=congty_list";
                     <tr>
                         <th width="1%"></th>
                         <th align="center" width="1%">STT</th>
-                        <th width="20%" align="center">{tencty}</th>
+                        <th width="20%" align="center">Tên công ty</th>
                         <th width="20%" align="center">{diachi}</th>
                         <!--<th width="20%" align="center">{gioithieu}</th>-->
                         
@@ -148,7 +150,7 @@ $link = "index.php?com=congty_list";
                 <tbody>
                     <?php
                     $i = ($page-1)*$limit;;
-                    while ($row = mysql_fetch_assoc($list_trang)) {
+                    foreach ($list_trang as $row) {
                         $i++;
                         ?>
                         <tr <?php if ($i % 2 == 0) echo "bgcolor='#CCC'"; ?>>

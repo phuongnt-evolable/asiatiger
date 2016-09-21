@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abfd6878-9c50-4a38-b482-c817063c9038" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/Model/Congty.php" afterPath="$PROJECT_DIR$/admin/Model/Congty.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/khach-hang/index.php" afterPath="$PROJECT_DIR$/khach-hang/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/tim-kiem.php" afterPath="$PROJECT_DIR$/page/tim-kiem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/blocks/congty/congty_list.php" afterPath="$PROJECT_DIR$/admin/blocks/congty/congty_list.php" />
     </list>
     <ignored path="asiatiger.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +28,8 @@
       <file leaf-file-name="Congty.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/Model/Congty.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="141" column="8" selection-start-line="141" selection-start-column="8" selection-end-line="141" selection-end-column="8" />
+            <state relative-caret-position="308">
+              <caret line="81" column="13" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
               <folding>
                 <marker date="1474369848394" expanded="true" signature="107:166" placeholder="SELECT * FRO... category" />
                 <marker date="1474369848394" expanded="true" signature="309:348" placeholder="SELECT * FRO... congty" />
@@ -71,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="congty_list.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="congty_list.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/blocks/congty/congty_list.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="774">
-              <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+            <state relative-caret-position="287">
+              <caret line="139" column="71" selection-start-line="139" selection-start-column="71" selection-end-line="139" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -84,8 +81,8 @@
       <file leaf-file-name="Db.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/Model/Db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="46" column="42" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
+            <state relative-caret-position="308">
+              <caret line="78" column="55" selection-start-line="78" selection-start-column="55" selection-end-line="78" selection-end-column="55" />
               <folding>
                 <marker date="1473764195473" expanded="true" signature="4832:4879" placeholder="..." />
                 <marker date="1473764195473" expanded="true" signature="4891:4909" placeholder="..." />
@@ -108,101 +105,6 @@
                 <marker date="1473764195473" expanded="true" signature="13249:13323" placeholder="INSERT into donhangct... " />
                 <marker date="1473764195473" expanded="true" signature="13433:13492" placeholder="SELECT ten_s... product" />
                 <marker date="1473764195473" expanded="true" signature="13638:13847" placeholder="select * fro... congty" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tim-kiem.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/tim-kiem.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-              <folding>
-                <marker date="1474370186990" expanded="true" signature="11025:11058" placeholder="..." />
-                <marker date="1474370186990" expanded="true" signature="13475:13508" placeholder="..." />
-                <marker date="1474370186990" expanded="true" signature="22185:22218" placeholder="..." />
-                <marker date="1474370186990" expanded="true" signature="22809:22842" placeholder="..." />
-                <marker date="1474370186990" expanded="true" signature="28573:28606" placeholder="..." />
-                <marker date="1474370186990" expanded="true" signature="29189:29222" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/khach-hang/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="647">
-              <caret line="361" column="50" selection-start-line="361" selection-start-column="50" selection-end-line="361" selection-end-column="50" />
-              <folding>
-                <marker date="1474370830450" expanded="true" signature="4427:4476" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Product.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/Model/Product.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-              <folding>
-                <marker date="1473764195389" expanded="true" signature="119:160" placeholder="SELECT * FRO... product" />
-                <marker date="1473764195389" expanded="true" signature="334:380" placeholder="SELECT * FRO... product" />
-                <marker date="1473764195389" expanded="true" signature="651:808" placeholder="SELECT * FRO... product" />
-                <marker date="1473764195389" expanded="true" signature="1359:1542" placeholder="SELECT * FRO... product" />
-                <marker date="1473764195389" expanded="true" signature="1775:1895" placeholder="SELECT * FRO... product" />
-                <marker date="1473764195389" expanded="true" signature="2050:2170" placeholder="SELECT * FRO... product" />
-                <marker date="1473764195389" expanded="true" signature="2304:2354" placeholder="SELECT * FRO... product" />
-                <marker date="1473764195389" expanded="true" signature="2531:2596" placeholder="SELECT * FRO... product" />
-                <marker date="1473764195389" expanded="true" signature="2801:2893" placeholder="SELECT * FRO... product" />
-                <marker date="1473764195389" expanded="true" signature="3093:3166" placeholder="SELECT * FRO... product" />
-                <marker date="1473764195389" expanded="true" signature="3478:3524" placeholder="SELECT * FRO... product" />
-                <marker date="1473764195389" expanded="true" signature="3782:3828" placeholder="SELECT * FRO... product" />
-                <marker date="1473764195389" expanded="true" signature="4091:4153" placeholder="SELECT * FRO... product" />
-                <marker date="1473764195389" expanded="true" signature="4412:4532" placeholder="SELECT produ... product" />
-                <marker date="1473764195389" expanded="true" signature="4718:4853" placeholder="SELECT produ... product" />
-                <marker date="1473764195389" expanded="true" signature="5045:5198" placeholder="SELECT produ... product" />
-                <marker date="1473764195389" expanded="true" signature="5356:5411" placeholder="SELECT cate_... category" />
-                <marker date="1473764195389" expanded="true" signature="5557:5596" placeholder="SELECT * FRO... category" />
-                <marker date="1473764195389" expanded="true" signature="5739:5779" placeholder="SELECT idTL category" />
-                <marker date="1473764195389" expanded="true" signature="6877:7135" placeholder="INSERT INTO product... " />
-                <marker date="1473764195389" expanded="true" signature="8206:8677" placeholder="UPDATE produ... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="xuly_themcty.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/ajax/xuly_themcty.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1473764204645" expanded="true" signature="1659:2105" placeholder="INSERT INTO congty... " />
-                <marker date="1473764204645" expanded="true" signature="2272:2312" placeholder="SELECT idTL category" />
-                <marker date="1473764204645" expanded="true" signature="2483:2541" placeholder="INSERT INTO cty_cate... " />
               </folding>
             </state>
           </provider>
@@ -233,6 +135,7 @@
         <option value="$PROJECT_DIR$/page/tim-kiem.php" />
         <option value="$PROJECT_DIR$/khach-hang/index.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/admin/blocks/congty/congty_list.php" />
       </list>
     </option>
   </component>
@@ -247,9 +150,9 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="57" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1863" />
-    <option name="height" value="1056" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -276,7 +179,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -309,9 +212,63 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="asiatiger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="asiatiger" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="asiatiger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="asiatiger" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocks" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="asiatiger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="asiatiger" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocks" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="congty" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -375,15 +332,17 @@
       <workItem from="1473986660881" duration="1324000" />
       <workItem from="1474010718548" duration="7000" />
       <workItem from="1474245949288" duration="3137000" />
-      <workItem from="1474349420077" duration="4751000" />
+      <workItem from="1474349420077" duration="4908000" />
+      <workItem from="1474419533589" duration="546000" />
+      <workItem from="1474454896299" duration="1251000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46794000" />
+    <option name="totallyTimeSpent" value="48748000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="24" width="1863" height="1056" extended-state="6" />
+    <frame x="57" y="-4" width="1863" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -609,14 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/blocks/congty/congty_list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -633,36 +584,6 @@
             <marker date="1473764204645" expanded="true" signature="1659:2105" placeholder="INSERT INTO congty... " />
             <marker date="1473764204645" expanded="true" signature="2272:2312" placeholder="SELECT idTL category" />
             <marker date="1473764204645" expanded="true" signature="2483:2541" placeholder="INSERT INTO cty_cate... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/Model/Db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="46" column="42" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
-          <folding>
-            <marker date="1473764195473" expanded="true" signature="4832:4879" placeholder="..." />
-            <marker date="1473764195473" expanded="true" signature="4891:4909" placeholder="..." />
-            <marker date="1473764195473" expanded="true" signature="4928:4941" placeholder="..." />
-            <marker date="1473764195473" expanded="true" signature="6086:6121" placeholder="..." />
-            <marker date="1473764195473" expanded="true" signature="6133:6151" placeholder="..." />
-            <marker date="1473764195473" expanded="true" signature="6170:6183" placeholder="..." />
-            <marker date="1473764195473" expanded="true" signature="6500:6559" placeholder="SELECT * FRO... USER" />
-            <marker date="1473764195473" expanded="true" signature="6948:7020" placeholder="SELECT * FRO... user" />
-            <marker date="1473764195473" expanded="true" signature="7691:7763" placeholder="SELECT * FRO... user" />
-            <marker date="1473764195473" expanded="true" signature="8831:8901" placeholder="SELECT * FRO... user" />
-            <marker date="1473764195473" expanded="true" signature="10943:10992" placeholder="SELECT idKH khachhang" />
-            <marker date="1473764195473" expanded="true" signature="11239:11335" placeholder="INSERT into khachhang... " />
-            <marker date="1473764195473" expanded="true" signature="11552:11854" placeholder="INSERT into congty... " />
-            <marker date="1473764195473" expanded="true" signature="12044:12123" placeholder="INSERT into user... " />
-            <marker date="1473764195473" expanded="true" signature="12224:12264" placeholder="SELECT * FRO... user" />
-            <marker date="1473764195473" expanded="true" signature="12498:12564" placeholder="INSERT into donhang... " />
-            <marker date="1473764195473" expanded="true" signature="12785:12913" placeholder="UPDATE khach... " />
-            <marker date="1473764195473" expanded="true" signature="13055:13117" placeholder="UPDATE user " />
-            <marker date="1473764195473" expanded="true" signature="13249:13323" placeholder="INSERT into donhangct... " />
-            <marker date="1473764195473" expanded="true" signature="13433:13492" placeholder="SELECT ten_s... product" />
-            <marker date="1473764195473" expanded="true" signature="13638:13847" placeholder="select * fro... congty" />
           </folding>
         </state>
       </provider>
@@ -697,10 +618,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/tim-kiem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="890">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <marker date="1474370186990" expanded="true" signature="11025:11058" placeholder="..." />
+            <marker date="1474370186990" expanded="true" signature="13475:13508" placeholder="..." />
+            <marker date="1474370186990" expanded="true" signature="22185:22218" placeholder="..." />
+            <marker date="1474370186990" expanded="true" signature="22809:22842" placeholder="..." />
+            <marker date="1474370186990" expanded="true" signature="28573:28606" placeholder="..." />
+            <marker date="1474370186990" expanded="true" signature="29189:29222" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/khach-hang/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="890">
+          <caret line="361" column="50" selection-start-line="361" selection-start-column="50" selection-end-line="361" selection-end-column="50" />
+          <folding>
+            <marker date="1474370830450" expanded="true" signature="4427:4476" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/Model/Db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="78" column="55" selection-start-line="78" selection-start-column="55" selection-end-line="78" selection-end-column="55" />
+          <folding>
+            <marker date="1473764195473" expanded="true" signature="4832:4879" placeholder="..." />
+            <marker date="1473764195473" expanded="true" signature="4891:4909" placeholder="..." />
+            <marker date="1473764195473" expanded="true" signature="4928:4941" placeholder="..." />
+            <marker date="1473764195473" expanded="true" signature="6086:6121" placeholder="..." />
+            <marker date="1473764195473" expanded="true" signature="6133:6151" placeholder="..." />
+            <marker date="1473764195473" expanded="true" signature="6170:6183" placeholder="..." />
+            <marker date="1473764195473" expanded="true" signature="6500:6559" placeholder="SELECT * FRO... USER" />
+            <marker date="1473764195473" expanded="true" signature="6948:7020" placeholder="SELECT * FRO... user" />
+            <marker date="1473764195473" expanded="true" signature="7691:7763" placeholder="SELECT * FRO... user" />
+            <marker date="1473764195473" expanded="true" signature="8831:8901" placeholder="SELECT * FRO... user" />
+            <marker date="1473764195473" expanded="true" signature="10943:10992" placeholder="SELECT idKH khachhang" />
+            <marker date="1473764195473" expanded="true" signature="11239:11335" placeholder="INSERT into khachhang... " />
+            <marker date="1473764195473" expanded="true" signature="11552:11854" placeholder="INSERT into congty... " />
+            <marker date="1473764195473" expanded="true" signature="12044:12123" placeholder="INSERT into user... " />
+            <marker date="1473764195473" expanded="true" signature="12224:12264" placeholder="SELECT * FRO... user" />
+            <marker date="1473764195473" expanded="true" signature="12498:12564" placeholder="INSERT into donhang... " />
+            <marker date="1473764195473" expanded="true" signature="12785:12913" placeholder="UPDATE khach... " />
+            <marker date="1473764195473" expanded="true" signature="13055:13117" placeholder="UPDATE user " />
+            <marker date="1473764195473" expanded="true" signature="13249:13323" placeholder="INSERT into donhangct... " />
+            <marker date="1473764195473" expanded="true" signature="13433:13492" placeholder="SELECT ten_s... product" />
+            <marker date="1473764195473" expanded="true" signature="13638:13847" placeholder="select * fro... congty" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/Model/Congty.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="141" column="8" selection-start-line="141" selection-start-column="8" selection-end-line="141" selection-end-column="8" />
+        <state relative-caret-position="308">
+          <caret line="81" column="13" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
           <folding>
             <marker date="1474369848394" expanded="true" signature="107:166" placeholder="SELECT * FRO... category" />
             <marker date="1474369848394" expanded="true" signature="309:348" placeholder="SELECT * FRO... congty" />
@@ -738,35 +722,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/tim-kiem.php">
+    <entry file="file://$PROJECT_DIR$/admin/blocks/congty/congty_list.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <marker date="1474370186990" expanded="true" signature="11025:11058" placeholder="..." />
-            <marker date="1474370186990" expanded="true" signature="13475:13508" placeholder="..." />
-            <marker date="1474370186990" expanded="true" signature="22185:22218" placeholder="..." />
-            <marker date="1474370186990" expanded="true" signature="22809:22842" placeholder="..." />
-            <marker date="1474370186990" expanded="true" signature="28573:28606" placeholder="..." />
-            <marker date="1474370186990" expanded="true" signature="29189:29222" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/khach-hang/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="361" column="50" selection-start-line="361" selection-start-column="50" selection-end-line="361" selection-end-column="50" />
-          <folding>
-            <marker date="1474370830450" expanded="true" signature="4427:4476" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        <state relative-caret-position="287">
+          <caret line="139" column="71" selection-start-line="139" selection-start-column="71" selection-end-line="139" selection-end-column="71" />
           <folding />
         </state>
       </provider>
