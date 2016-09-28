@@ -121,7 +121,7 @@ define("rememberme", "記 住 我");
 define("hoac", "或");
 define("batbuocnhap", '<p><font style="color:red;">(*)</font> 處 必 須 填 上 資 料.</p>');
 define("tttk", "帳 戶 資 訊");
-define("ttct", "公 司 資 訊");
+define("ttct", "公 司 簡 介");
 define("hangmuckd", "營 業 項 目 (可 以 複 選)");
 define("website", "網 站");
 define("nhaplai", "重 新 輸 入");

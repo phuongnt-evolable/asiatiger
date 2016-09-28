@@ -123,7 +123,7 @@
                   </li>
                   <li><span>{website}:</span><p style="float:left;">http://</p><input id="website" class="input_text" type="text" size="45" name="website" value="" placeholder="asiatiger.org"></li>
                   <li><span><font style="color:red;margin-right: 10px;">(*)</font>{nguoilienhe}:</span><input id="nguoidaidien" class="input_text" type="text" size="45" name="nguoidaidien" value="" placeholder="{nguoilienhe}"></li>
-                  <li><span>{didong}:</span><input id="didong" class="input_text" type="text" size="45" name="didong" value="" placeholder=""></li>
+                  <li><span><font style="color:red;margin-right: 10px;">(*)</font>{didong}:</span><input id="didong" class="input_text" type="text" size="45" name="didong" value="" placeholder=""></li>
                   <li>
                       <span><font style="color:red;margin-right: 10px;">(*)</font>{quocgia}:</span>
                       <select name='quocgia' id="quocgia">

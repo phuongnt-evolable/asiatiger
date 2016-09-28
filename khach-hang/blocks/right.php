@@ -102,6 +102,21 @@ $sql = "SELECT * from cty_cate WHERE congty_id=$congty_id";
                 </td>
             </tr>
             <tr>
+                <td align="right">{nhadautu}:</td>
+                <td>
+                    <select name='nhadautu' id="nhadautu">
+                        <option value='0'>----{chon}----</option>
+                        <?php
+                        $nha_dau_tu = $modelQuocgia->getAllQuocGia();
+                        while ($row_nha_dau_tu = mysql_fetch_assoc($nha_dau_tu)) {
+                            ?>
+                            <option <?php echo ($row_cty['NhaDauTu_'.$lang] == $row_nha_dau_tu['TenQuocGia_' . $lang]) ? "selected" : ""; ?> value="<?php echo $row_nha_dau_tu['TenQuocGia_' . $lang] ?>"><?php echo $row_nha_dau_tu['TenQuocGia_' . $lang] ?></option>
+
+                        <?php } ?>
+                    </select>
+                </td>
+            </tr>
+            <tr>
                 <td align="right"> {nguoilienhe}:</td>
                 <td>
                     <p>
@@ -171,7 +186,7 @@ $sql = "SELECT * from cty_cate WHERE congty_id=$congty_id";
             </tr>
                 <?php } ?>
             <tr>
-                <td align="right"> {didong}:</td>
+                <td align="right"><span class="red">*</span> {didong}:</td>
                 <td>
                     <p>
                         <input name="didong" type="text" class="mid_text" id="didong" value="<?php echo $row_cty['DiDong']; ?>" maxlength="20" >
@@ -180,7 +195,7 @@ $sql = "SELECT * from cty_cate WHERE congty_id=$congty_id";
                 </td>
             </tr>
             <tr>
-                <td align="right"><span class="red">*</span> {dienthoai}:</td>
+                <td align="right">{dienthoai}:</td>
                 <td>
                     <input name="dienthoai" type="text" class="mid_text" id="dienthoai" value="<?php echo $row_cty['DienThoai']; ?>" maxlength="20" ></td>
             </tr>

@@ -205,7 +205,7 @@ function chkcontrol(j) {
                 cate_id[i++] = $(this).val();
             });
 
-			if(us=="" ||tencty=="" || address=="" || pass=="" /*||phone3=="" || phone2=="" */|| email=="" || spchinh=="" || quocgia=="0")
+			if(us=="" ||tencty=="" || address=="" || pass=="" || didong=="" || phone2=="" || email=="" || spchinh=="" || quocgia=="0")
 			{		
                 if(lang=='vi'){
                      swal("Lỗi...", "Bạn vui lòng điền đầy đủ thông tin !", "error");
@@ -220,10 +220,23 @@ function chkcontrol(j) {
                 }else{
                     $("#username").removeClass("false");
                 }
+
                 if(tencty==""){
                     $("#tencty").addClass("false");
                 }else{
                     $("#tencty").removeClass("false");
+                }
+
+                if(pass==""){
+                    $("#pass").addClass("false");
+                }else{
+                    $("#pass").removeClass("false");
+                }
+
+                if(didong==""){
+                    $("#didong").addClass("false");
+                }else{
+                    $("#didong").removeClass("false");
                 }
 
                 if(email==""){

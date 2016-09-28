@@ -1,6 +1,6 @@
 <?php
 $link = "index.php?com=congty_list";
-    if(isset($_GET['tukhoa'])){
+    if(isset($_GET['tukhoa']) && !empty($_GET['tukhoa'])){
          $tukhoa = $_GET['tukhoa'];
         $link.="&tukhoa=$tukhoa";
      }   
@@ -25,9 +25,8 @@ $link = "index.php?com=congty_list";
             $trangs = $modelCongTy->getListCongTyByCategoryAdmin( -1, -1);
         }
     }
-    
 
-    if($cate_id < 0){
+    if(isset($tukhoa)){
         $total_record = count($trangs);
     }else{
         $total_record = mysql_num_rows($trangs);
@@ -86,9 +85,10 @@ $link = "index.php?com=congty_list";
         <div>
             <table>
                 <thead>
+                <form method="get" action="" name="formTim" id="formTim">
                      <tr>
                         <td colspan="8">
-                            <form method="get" action="" name="formTim" id="formTim">
+
                                 {danhmuc}
                                 <select name='cate_id' id="cate_id">
                                 <option value='0'>---Chọn----</option>
@@ -97,13 +97,12 @@ $link = "index.php?com=congty_list";
                                 while($row_cha = mysql_fetch_assoc($rs_cha)){
                                    // $idTL=$row_cha['idTL'];
                                 ?>
-
                                 <optgroup value="<?php echo $row_cha['idTL']?>" label="<?php echo $row_cha['TenTL_'.$lang]?>">
                                     <?php
                                 $rs_con = $modelCate->getListCate($row_cha['idTL']);
                                 if(mysql_num_rows($rs_con) > 0) {while($row_con = mysql_fetch_assoc($rs_con)){
                                 ?>
-                                    <option value="<?php echo $row_con['cate_id']?>"><?php echo $row_con['cate_name_'.$lang]?></option>
+                                    <option <?php if($cate_id == $row_con['cate_id']) { echo "selected" ;} ?> value="<?php echo $row_con['cate_id']?>" ><?php echo $row_con['cate_name_'.$lang]?></option>
                                 <?php }}else{ ?>
                                     <option value="<?php echo $row_cha['cate_id']?>"><?php echo $row_cha['cate_name_'.$lang]?></option>
                                 <?php } ?>
@@ -111,26 +110,25 @@ $link = "index.php?com=congty_list";
 
                                 <?php  } ?> 
                           </select>
-                                <input type="submit" id="btnSubmit" value="  {xem} " />
-                                <br /><br />
-                                <input type="hidden" name="com" value="congty_list"  />
-                            </form>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2">Tìm công ty </td>
-                        <form method="get" action="">                                                           
-                        <td colspan="4">                            
+                        <td colspan="4">
                                 <div class="ui-searchbar-main">
                                     <input type="text" class="ui-searchbar-keyword" name="tukhoa" autocomplete="off" x-webkit-speech="x-webkit-speech" x-webkit-grammar="builtin:translate" lang="en">
                                 </div>
-                                                          
-                        
                             <input type="submit" name="btnSubmit" id="btnSubmit" value="  {xem} " />
                                 <input type="hidden" name="com" value="congty_list"/>  
                         </td>
-                        </form>
+
                     </tr>
+                </form>
+                     <tr>
+                         <td colspan="8">
+                             <a style="color: #9e241e; font-weight: bold;">Tìm được <?php echo $total_record; ?> công ty.</a>
+                         </td>
+                     </tr>
                     <tr>
                         <td colspan="8"><?php echo $modelCongTy->phantrang($page, $page_show, $total_page, $link); ?></td>
                     </tr>
@@ -149,30 +147,55 @@ $link = "index.php?com=congty_list";
 
                 <tbody>
                     <?php
-                    $i = ($page-1)*$limit;;
-                    foreach ($list_trang as $row) {
-                        $i++;
-                        ?>
-                        <tr <?php if ($i % 2 == 0) echo "bgcolor='#CCC'"; ?>>
-                            <td><input type="checkbox" name="chon" idDM=<?php echo $row['congty_id'] ?>></td>
-                            <td align="center" style="vertical-align: middle;"><?php echo $i; ?></td>
-                            <td align="center" style="font-size: 16px;vertical-align: middle;"><?php echo $row['TenCT_'.$lang]; ?></td>
-                            <td align="center" style="font-size: 16px;vertical-align: middle;"><?php echo $row['DiaChi_'.$lang]; ?></td>
-                            <!--<td align="center" style="font-size: 16px;vertical-align: middle;">
-                                <div style="height: 100px; width: 350px; overflow: hidden;"><?php 
-                                   echo $noidung= $row['GioiThieu_'.$lang];
-                                    //echo $chuoi1=substr($noidung,1,100);
-                                ?>
-                                    </div>
-                            </td>-->
-                            
-                            <td align="center"><img src="../<?php echo $row['HinhDaiDien']; ?>" width="100" height="100"/></td>
-                            <td style="white-space:nowrap">
-                                <a href="index.php?com=congty_edit&amp;congty_id=<?php echo $row['congty_id'] ?>"><img src="img/icons/user_edit.png" alt="" title="" border="0"></a>
-                            &nbsp;&nbsp;
-                                <img class="linkxoa" congty_id="<?php echo $row['congty_id'] ?>" src="img/icons/trash.png" alt="Xóa" title="Xóa" border="0"></td>
+                    $i = ($page-1)*$limit;
+                        if(isset($tukhoa)){
 
-<?php } ?>
+                            foreach ($list_trang as $row) {
+                                $i++;
+                                ?>
+                                <tr <?php if ($i % 2 == 0) echo "bgcolor='#CCC'"; ?>>
+                                    <td><input type="checkbox" name="chon" idDM=<?php echo $row['congty_id'] ?>></td>
+                                    <td align="center" style="vertical-align: middle;"><?php echo $i; ?></td>
+                                    <td align="center" style="font-size: 16px;vertical-align: middle;"><?php echo $row['TenCT_'.$lang]; ?></td>
+                                    <td align="center" style="font-size: 16px;vertical-align: middle;"><?php echo $row['DiaChi_'.$lang]; ?></td>
+                                    <!--<td align="center" style="font-size: 16px;vertical-align: middle;">
+                                        <div style="height: 100px; width: 350px; overflow: hidden;"><?php
+                                           echo $noidung= $row['GioiThieu_'.$lang];
+                                            //echo $chuoi1=substr($noidung,1,100);
+                                        ?>
+                                            </div>
+                                    </td>-->
+
+                                    <td align="center"><img src="../<?php echo $row['HinhDaiDien']; ?>" width="100" height="100"/></td>
+                                    <td style="white-space:nowrap">
+                                        <a href="index.php?com=congty_edit&amp;congty_id=<?php echo $row['congty_id'] ?>"><img src="img/icons/user_edit.png" alt="" title="" border="0"></a>
+                                    &nbsp;&nbsp;
+                                        <img class="linkxoa" congty_id="<?php echo $row['congty_id'] ?>" src="img/icons/trash.png" alt="Xóa" title="Xóa" border="0"></td>
+
+                            <?php } } else { ?>
+                             <?php
+                                while ($row = mysql_fetch_assoc($list_trang)) {
+                                    $i++;
+                                    ?>
+                                    <tr <?php if ($i % 2 == 0) echo "bgcolor='#CCC'"; ?>>
+                                        <td><input type="checkbox" name="chon" idDM=<?php echo $row['congty_id'] ?>></td>
+                                        <td align="center" style="vertical-align: middle;"><?php echo $i; ?></td>
+                                        <td align="center" style="font-size: 16px;vertical-align: middle;"><?php echo $row['TenCT_'.$lang]; ?></td>
+                                        <td align="center" style="font-size: 16px;vertical-align: middle;"><?php echo $row['DiaChi_'.$lang]; ?></td>
+                                        <!--<td align="center" style="font-size: 16px;vertical-align: middle;">
+                                                        <div style="height: 100px; width: 350px; overflow: hidden;"><?php
+                                        echo $noidung= $row['GioiThieu_'.$lang];
+                                        //echo $chuoi1=substr($noidung,1,100);
+                                        ?>
+                                                            </div>
+                                                    </td>-->
+
+                                        <td align="center"><img src="../<?php echo $row['HinhDaiDien']; ?>" width="100" height="100"/></td>
+                                        <td style="white-space:nowrap">
+                                            <a href="index.php?com=congty_edit&amp;congty_id=<?php echo $row['congty_id'] ?>"><img src="img/icons/user_edit.png" alt="" title="" border="0"></a>
+                                            &nbsp;&nbsp;
+                                            <img class="linkxoa" congty_id="<?php echo $row['congty_id'] ?>" src="img/icons/trash.png" alt="Xóa" title="Xóa" border="0"></td>
+                             <?php } }?>
                     <tr>
                         <td colspan="7"><?php echo $modelCongTy->phantrang($page, $page_show, $total_page, $link); ?></td>
                     </tr>

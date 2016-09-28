@@ -53,13 +53,13 @@
         ?>
         <tr>
             <?php if($lang=='en'){ ?>
-                <td colspan="4" height="50" align="center"><p>No Products Added, <a href="them-san-pham.html">click here to add new product</a></p></td>
+                <td colspan="4" height="50" align="center"><p>No Products Added, <a style="color: #F00;" href="them-san-pham.html">click here to add new product</a></p></td>
             <?php } ?>
             <?php if($lang=='cn'){ ?>
-                 <td colspan="4" height="50" align="center"><p>暫  無 產 品, <a href="them-san-pham.html">請 按 這 裡 來 新 增 產 品</a></p></td>
+                 <td colspan="4" height="50" align="center"><p>暫  無 產 品, <a style="color: #F00;" href="them-san-pham.html">請 按 這 裡 來 新 增 產 品</a></p></td>
             <?php } ?>
             <?php if($lang=='vi'){ ?>
-                <td colspan="4" height="50" align="center"><p>Hiện chưa có sản phẩm nào, <a href="them-san-pham.html">nhấn vào đây để thêm sản phẩm.</a></p></td>
+                <td colspan="4" height="50" align="center"><p>Hiện chưa có sản phẩm nào, <a style="color: #F00;" href="them-san-pham.html">nhấn vào đây để thêm sản phẩm.</a></p></td>
             <?php } ?>
             
         </tr>

@@ -332,6 +332,7 @@
             
             var qq=$("#qq").val();
             var quocgia=$("#quocgia").val();
+            var nhadautu=$("#nhadautu").val();
 			var diachi_vi=$("#diachi_vi").val();
             var diachi_cn=$("#diachi_cn").val();
             var diachi_en=$("#diachi_en").val();
@@ -354,7 +355,7 @@
             
             var jsonString = JSON.stringify(cate_id);
                        
-			if( phone=="" || email=="" || ten_cty_vi=='' || ten_cty_cn =='' || ten_cty_en =='' || diachi_vi =='' || diachi_cn =='' || diachi_en =='' || quocgia == 0)
+			if( didong=="" || email=="" || ten_cty_vi=='' || ten_cty_cn =='' || ten_cty_en =='' || diachi_vi =='' || diachi_cn =='' || diachi_en =='' || quocgia == 0)
 			{			
 				if(lang=='vi'){
                     alert("Bạn chưa nhập đầy đủ thông tin !");
@@ -381,10 +382,10 @@
 					$("#quocgia").removeClass("false");
 				}
 				
-				if(phone==""){
-					$("#dienthoai").addClass("false");
+				if(didong==""){
+					$("#didong").addClass("false");
 				}else{
-					$("#dienthoai").removeClass("false");
+					$("#didong").removeClass("false");
 				}
                                 							
 				return false;
@@ -392,7 +393,7 @@
 			else
 			{	
                 $("#thongbao").html('<div align="center"><img src="../img/loading.gif" /> {vuilongdoi}</div>');
-                $.post('../ajax/xuly_thaydoithongtin.php',{cate_id:jsonString,congty_id:congty_id,email:email,ten_cty_vi:ten_cty_vi,ten_cty_cn:ten_cty_cn,ten_cty_en:ten_cty_en,quocgia:quocgia,nguoilienhe:nguoilienhe,skype:jsonStringSkype,qq:qq,didong:didong,phone:phone,fax:fax,website:website,diachi_vi:diachi_vi,diachi_cn:diachi_cn,diachi_en:diachi_en,gioithieu_vi:gioithieu_vi,gioithieu_cn:gioithieu_cn,gioithieu_en:gioithieu_en,spchinh:spchinh},function(data){												
+                $.post('../ajax/xuly_thaydoithongtin.php',{cate_id:jsonString,congty_id:congty_id,email:email,ten_cty_vi:ten_cty_vi,ten_cty_cn:ten_cty_cn,ten_cty_en:ten_cty_en,quocgia:quocgia,nguoilienhe:nguoilienhe,skype:jsonStringSkype,qq:qq,didong:didong,phone:phone,fax:fax,website:website,diachi_vi:diachi_vi,diachi_cn:diachi_cn,diachi_en:diachi_en,gioithieu_vi:gioithieu_vi,gioithieu_cn:gioithieu_cn,gioithieu_en:gioithieu_en,spchinh:spchinh,nhadautu:nhadautu},function(data){
                     if(lang=='vi'){
                         alert("Xử lý thành công !");
                     }if(lang=='cn'){
@@ -647,6 +648,7 @@
             $str = str_replace("{canban}" , canban , $str);
             $str = str_replace("{canmua}" , canmua , $str);
             $str = str_replace("{danhchovip}" , danhchovip , $str);
+            $str = str_replace("{nhadautu}" , nhadautu , $str);
             
             //echo $lang;
             echo $str;
