@@ -1,6 +1,7 @@
 <?php
     session_start();
-   $url = $_SERVER['REQUEST_URI'];   
+
+   $url = $_SERVER['REQUEST_URI'];
     $_SESSION["url"]=$url;
     
      $link1 = $_SERVER['REQUEST_URI'];
@@ -17,7 +18,12 @@
     if($cate_tim==2){
         $total_record_sql = $modelCongTy->getListCongTyByTheLoai_TuKhoa($tukhoa1, $lang, -1, -1);
 
-        $arr_tukhoa = explode(" ", $tukhoa);
+        if ($lang != 'cn') {
+            $arr_tukhoa = explode(" ", $tukhoa);
+        } else {
+            $arr_tukhoa = preg_split('//u', $tukhoa, null, PREG_SPLIT_NO_EMPTY);
+        }
+
         foreach ($arr_tukhoa as $tu_khoa) {
             if(!empty($tu_khoa)){
                 $total_record_sql += $modelCongTy->getListCongTyByTheLoai_TuKhoa($tu_khoa, $lang, -1, -1);
@@ -38,7 +44,13 @@
     
     if($cate_tim == 2){
         $list_trang = $modelCongTy->getListCongTyByTheLoai_TuKhoa($tukhoa1,$lang,$offset, $limit);
-        $arr_tukhoa = explode(" ", $tukhoa);
+
+        if ($lang != 'cn') {
+            $arr_tukhoa = explode(" ", $tukhoa);
+        } else {
+            $arr_tukhoa = preg_split('//u', $tukhoa, null, PREG_SPLIT_NO_EMPTY);
+        }
+        
         foreach ($arr_tukhoa as $tu_khoa){
             if(!empty($tu_khoa)){
                 $list_trang += $modelCongTy->getListCongTyByTheLoai_TuKhoa($tu_khoa,$lang,$offset, $limit);

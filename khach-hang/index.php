@@ -649,7 +649,8 @@
             $str = str_replace("{canmua}" , canmua , $str);
             $str = str_replace("{danhchovip}" , danhchovip , $str);
             $str = str_replace("{nhadautu}" , nhadautu , $str);
-            
+            $str = str_replace("{chitiethangmuckinhdoanh}" , chitiethangmuckinhdoanh , $str);
+
             //echo $lang;
             echo $str;
         ?>

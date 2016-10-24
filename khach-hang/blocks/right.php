@@ -340,7 +340,7 @@ $sql = "SELECT * from cty_cate WHERE congty_id=$congty_id";
         </table>
         
         <p>&nbsp;</p>
-        <p class="sort dmnn">{danhmucnghanhnghe}<span class="red"> * </span></p>
+        <p class="sort dmnn">{danhmucnghanhnghe}<span class="red"> * </span> {chitiethangmuckinhdoanh}</p>
         <p>&nbsp;</p>
         <table id="dmnn" width="80%" border="0" align="center" cellpadding="0" cellspacing="0" class="form_table">
             <tr>

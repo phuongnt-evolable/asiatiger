@@ -207,4 +207,5 @@ define("xemthemthongtin", "更多信息");
 define("meoniengiam", "請向圖片雙擊左鍵以便退出放大模式");
 define("nhadautu", "投資商");
 define("nhanttqc", "接收廣告資訊");
+define("chitiethangmuckinhdoanh", "(請填寫詳細貴司的營業項目及產品名稱) 寫越多, 商機越大");
 ?>

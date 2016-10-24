@@ -197,5 +197,6 @@ define("xemthemthongtin", "More information ");
 define("meoniengiam", "Click 2 times on the picture if you want to exit the magnified image.");
 define("nhadautu", "Investors");
 define("nhanttqc", "Receive advertising information");
+define("chitiethangmuckinhdoanh", "(please fill in your company's business projects and detailed product name) write more, the business opportunity will greater‏");
 
 ?>

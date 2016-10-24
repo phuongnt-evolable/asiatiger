@@ -209,6 +209,7 @@ define("xemthemthongtin", "Xem thêm thông tin");
 define("meoniengiam", "Click 2 lần vào hình nếu bạn muốn thoát khỏi ảnh phóng to.");
 define("nhadautu", "Nhà đầu tư");
 define("nhanttqc", "Nhận thông tin quảng cáo");
+define("chitiethangmuckinhdoanh", "(Vui lòng điền đầy đủ chi tiết hạng mục kinh doanh và tên sản phẩm của quý ty) ghi càng nhiều, cơ hội kinh doanh càng lớn");
 
 ?>
  

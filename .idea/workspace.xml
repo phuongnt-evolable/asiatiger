@@ -3,14 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="abfd6878-9c50-4a38-b482-c817063c9038" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/blocks/congty/congty_list.php" afterPath="$PROJECT_DIR$/admin/blocks/congty/congty_list.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/xuly_thaydoithongtin.php" afterPath="$PROJECT_DIR$/ajax/xuly_thaydoithongtin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/ajax-file.php" afterPath="$PROJECT_DIR$/blocks/ajax-file.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/khach-hang/blocks/danh-sach-sp.php" afterPath="$PROJECT_DIR$/khach-hang/blocks/danh-sach-sp.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/khach-hang/blocks/right.php" afterPath="$PROJECT_DIR$/khach-hang/blocks/right.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/khach-hang/index.php" afterPath="$PROJECT_DIR$/khach-hang/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lang/lang_cn.php" afterPath="$PROJECT_DIR$/lang/lang_cn.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/dang-ky.php" afterPath="$PROJECT_DIR$/page/dang-ky.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lang/lang_en.php" afterPath="$PROJECT_DIR$/lang/lang_en.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lang/lang_vi.php" afterPath="$PROJECT_DIR$/lang/lang_vi.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/tim-kiem.php" afterPath="$PROJECT_DIR$/page/tim-kiem.php" />
     </list>
     <ignored path="asiatiger.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,23 +30,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="tim-kiem.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/page/tim-kiem.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="139" column="94" selection-start-line="139" selection-start-column="94" selection-end-line="139" selection-end-column="94" />
-              <folding />
+            <state relative-caret-position="720">
+              <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+              <folding>
+                <marker date="1477272685357" expanded="true" signature="11316:11349" placeholder="..." />
+                <marker date="1477272685357" expanded="true" signature="13766:13799" placeholder="..." />
+                <marker date="1477272685357" expanded="true" signature="22476:22509" placeholder="..." />
+                <marker date="1477272685357" expanded="true" signature="23100:23133" placeholder="..." />
+                <marker date="1477272685357" expanded="true" signature="28864:28897" placeholder="..." />
+                <marker date="1477272685357" expanded="true" signature="29480:29513" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test-menu-slide.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blocks/test-menu-slide.php">
+      <file leaf-file-name="Congty.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/Model/Congty.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1506">
-              <caret line="498" column="0" selection-start-line="498" selection-start-column="0" selection-end-line="498" selection-end-column="0" />
+            <state relative-caret-position="2664">
+              <caret line="148" column="9" selection-start-line="148" selection-start-column="9" selection-end-line="148" selection-end-column="9" />
               <folding>
-                <marker date="1473764310313" expanded="true" signature="2725:2763" placeholder="SELECT * FRO... blocks" />
+                <marker date="1477019888661" expanded="true" signature="107:166" placeholder="SELECT * FRO... category" />
+                <marker date="1477019888661" expanded="true" signature="309:348" placeholder="SELECT * FRO... congty" />
+                <marker date="1477019888661" expanded="true" signature="520:564" placeholder="SELECT * FRO... congty" />
+                <marker date="1477019888661" expanded="true" signature="791:845" placeholder="SELECT * FRO... congty" />
+                <marker date="1477019888661" expanded="true" signature="990:1045" placeholder="SELECT * FRO... congty" />
+                <marker date="1477019888661" expanded="true" signature="1217:1261" placeholder="SELECT * FRO... congty" />
+                <marker date="1477019888661" expanded="true" signature="1518:1620" placeholder="SELECT congt... congty" />
+                <marker date="1477019888661" expanded="true" signature="1910:1987" placeholder="SELECT * FRO... cty_cate" />
+                <marker date="1477019888661" expanded="true" signature="2271:2310" placeholder="SELECT * FRO... congty" />
+                <marker date="1477019888661" expanded="true" signature="2600:2739" placeholder="SELECT * FRO... congty" />
+                <marker date="1477019888661" expanded="true" signature="3107:3246" placeholder="SELECT * FRO... congty" />
+                <marker date="1477019888661" expanded="true" signature="3559:3696" placeholder="SELECT * FRO... cty_cate" />
+                <marker date="1477019888661" expanded="true" signature="3979:4018" placeholder="SELECT * FRO... congty" />
+                <marker date="1477019888661" expanded="true" signature="4366:4531" placeholder="SELECT * FRO... cty_cate" />
+                <marker date="1477019888661" expanded="true" signature="4813:4852" placeholder="SELECT * FRO... congty" />
+                <marker date="1477019888661" expanded="true" signature="5177:5491" placeholder="SELECT congt... congty" />
+                <marker date="1477019888661" expanded="true" signature="5912:6158" placeholder="SELECT * FRO... congty" />
+                <marker date="1477019888661" expanded="true" signature="6616:6780" placeholder="SELECT * FRO... congty" />
+                <marker date="1477019888661" expanded="true" signature="7339:7462" placeholder="SELECT * FRO... congty" />
+                <marker date="1477019888661" expanded="true" signature="7947:8172" placeholder="SELECT * FRO... congty" />
+                <marker date="1477019888661" expanded="true" signature="8585:8700" placeholder="SELECT congt... congty" />
+                <marker date="1477019888661" expanded="true" signature="8886:9016" placeholder="SELECT congt... congty" />
+                <marker date="1477019888661" expanded="true" signature="9208:9355" placeholder="SELECT congt... congty" />
+                <marker date="1477019888661" expanded="true" signature="9512:9567" placeholder="SELECT cate_... category" />
+                <marker date="1477019888661" expanded="true" signature="9713:9752" placeholder="SELECT * FRO... category" />
+                <marker date="1477019888661" expanded="true" signature="9895:9935" placeholder="SELECT idTL category" />
+                <marker date="1477019888661" expanded="true" signature="11526:11861" placeholder="INSERT INTO congty... " />
+                <marker date="1477019888661" expanded="true" signature="13418:14036" placeholder="UPDATE congt... " />
+                <marker date="1477019888661" expanded="true" signature="14161:14198" placeholder="SELECT * FRO... user" />
+                <marker date="1477019888661" expanded="true" signature="14345:14381" placeholder="SELECT * FRO... khachhang" />
+                <marker date="1477019888661" expanded="true" signature="14976:15116" placeholder="UPDATE khach... " />
+                <marker date="1477019888661" expanded="true" signature="15587:15717" placeholder="INSERT INTO khachhang... " />
               </folding>
             </state>
           </provider>
@@ -64,24 +100,24 @@
       <list>
         <option value="$PROJECT_DIR$/page/danh-sach-cong-ty.php" />
         <option value="$PROJECT_DIR$/page/danh-sach-cong-ty_theloai.php" />
-        <option value="$PROJECT_DIR$/lang/lang_vi.php" />
-        <option value="$PROJECT_DIR$/lang/lang_en.php" />
         <option value="$PROJECT_DIR$/khach-hang/blocks/seo.php" />
         <option value="$PROJECT_DIR$/khach-hang/blocks/footer.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/ajax/xuly_dangky.php" />
         <option value="$PROJECT_DIR$/admin/Model/Db.php" />
-        <option value="$PROJECT_DIR$/admin/Model/Congty.php" />
-        <option value="$PROJECT_DIR$/page/tim-kiem.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/admin/blocks/congty/congty_list.php" />
         <option value="$PROJECT_DIR$/page/dang-ky.php" />
         <option value="$PROJECT_DIR$/blocks/ajax-file.php" />
-        <option value="$PROJECT_DIR$/khach-hang/blocks/right.php" />
         <option value="$PROJECT_DIR$/ajax/xuly_thaydoithongtin.php" />
-        <option value="$PROJECT_DIR$/khach-hang/index.php" />
-        <option value="$PROJECT_DIR$/lang/lang_cn.php" />
         <option value="$PROJECT_DIR$/khach-hang/blocks/danh-sach-sp.php" />
+        <option value="$PROJECT_DIR$/lang/lang_vi.php" />
+        <option value="$PROJECT_DIR$/lang/lang_cn.php" />
+        <option value="$PROJECT_DIR$/lang/lang_en.php" />
+        <option value="$PROJECT_DIR$/khach-hang/blocks/right.php" />
+        <option value="$PROJECT_DIR$/khach-hang/index.php" />
+        <option value="$PROJECT_DIR$/admin/Model/Congty.php" />
+        <option value="$PROJECT_DIR$/page/tim-kiem.php" />
       </list>
     </option>
   </component>
@@ -96,9 +132,9 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="57" />
-    <option name="y" value="-4" />
-    <option name="width" value="1863" />
-    <option name="height" value="1084" />
+    <option name="y" value="52" />
+    <option name="width" value="1823" />
+    <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -125,6 +161,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -143,29 +181,18 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="asiatiger" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="asiatiger" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blocks" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/page" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -230,18 +257,23 @@
       <workItem from="1474505739591" duration="611000" />
       <workItem from="1474521927931" duration="2184000" />
       <workItem from="1474889387962" duration="3029000" />
-      <workItem from="1475064148214" duration="3716000" />
+      <workItem from="1475064148214" duration="3796000" />
+      <workItem from="1475110171992" duration="1204000" />
+      <workItem from="1475713713871" duration="3875000" />
+      <workItem from="1476963567542" duration="3244000" />
+      <workItem from="1477012800300" duration="6666000" />
+      <workItem from="1477270199771" duration="1838000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58342000" />
+    <option name="totallyTimeSpent" value="75249000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="-4" width="1863" height="1084" extended-state="6" />
-    <editor active="true" />
+    <frame x="57" y="52" width="1823" height="1028" extended-state="4" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24904004" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -305,40 +337,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1602">
           <caret line="89" column="13" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
-          <folding>
-            <marker date="1474369848394" expanded="true" signature="107:166" placeholder="SELECT * FRO... category" />
-            <marker date="1474369848394" expanded="true" signature="309:348" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="520:564" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="791:845" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="990:1045" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="1217:1261" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="1518:1620" placeholder="SELECT congt... congty" />
-            <marker date="1474369848394" expanded="true" signature="1910:1987" placeholder="SELECT * FRO... cty_cate" />
-            <marker date="1474369848394" expanded="true" signature="2271:2310" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="2600:2739" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="3107:3246" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="3559:3696" placeholder="SELECT * FRO... cty_cate" />
-            <marker date="1474369848394" expanded="true" signature="3979:4018" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="4366:4531" placeholder="SELECT * FRO... cty_cate" />
-            <marker date="1474369848394" expanded="true" signature="4813:4852" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="5177:5491" placeholder="SELECT congt... congty" />
-            <marker date="1474369848394" expanded="true" signature="5912:6158" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="6616:6780" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="7339:7462" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="7947:8172" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="8585:8700" placeholder="SELECT congt... congty" />
-            <marker date="1474369848394" expanded="true" signature="8886:9016" placeholder="SELECT congt... congty" />
-            <marker date="1474369848394" expanded="true" signature="9208:9355" placeholder="SELECT congt... congty" />
-            <marker date="1474369848394" expanded="true" signature="9512:9567" placeholder="SELECT cate_... category" />
-            <marker date="1474369848394" expanded="true" signature="9713:9752" placeholder="SELECT * FRO... category" />
-            <marker date="1474369848394" expanded="true" signature="9895:9935" placeholder="SELECT idTL category" />
-            <marker date="1474369848394" expanded="true" signature="11526:11861" placeholder="INSERT INTO congty... " />
-            <marker date="1474369848394" expanded="true" signature="13418:14036" placeholder="UPDATE congt... " />
-            <marker date="1474369848394" expanded="true" signature="14161:14198" placeholder="SELECT * FRO... user" />
-            <marker date="1474369848394" expanded="true" signature="14345:14381" placeholder="SELECT * FRO... khachhang" />
-            <marker date="1474369848394" expanded="true" signature="14976:15116" placeholder="UPDATE khach... " />
-            <marker date="1474369848394" expanded="true" signature="15587:15717" placeholder="INSERT INTO khachhang... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -346,29 +344,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="35" />
-          <folding>
-            <marker date="1473764195473" expanded="true" signature="4832:4879" placeholder="..." />
-            <marker date="1473764195473" expanded="true" signature="4891:4909" placeholder="..." />
-            <marker date="1473764195473" expanded="true" signature="4928:4941" placeholder="..." />
-            <marker date="1473764195473" expanded="true" signature="6086:6121" placeholder="..." />
-            <marker date="1473764195473" expanded="true" signature="6133:6151" placeholder="..." />
-            <marker date="1473764195473" expanded="true" signature="6170:6183" placeholder="..." />
-            <marker date="1473764195473" expanded="true" signature="6500:6559" placeholder="SELECT * FRO... USER" />
-            <marker date="1473764195473" expanded="true" signature="6948:7020" placeholder="SELECT * FRO... user" />
-            <marker date="1473764195473" expanded="true" signature="7691:7763" placeholder="SELECT * FRO... user" />
-            <marker date="1473764195473" expanded="true" signature="8831:8901" placeholder="SELECT * FRO... user" />
-            <marker date="1473764195473" expanded="true" signature="10943:10992" placeholder="SELECT idKH khachhang" />
-            <marker date="1473764195473" expanded="true" signature="11239:11335" placeholder="INSERT into khachhang... " />
-            <marker date="1473764195473" expanded="true" signature="11552:11854" placeholder="INSERT into congty... " />
-            <marker date="1473764195473" expanded="true" signature="12044:12123" placeholder="INSERT into user... " />
-            <marker date="1473764195473" expanded="true" signature="12224:12264" placeholder="SELECT * FRO... user" />
-            <marker date="1473764195473" expanded="true" signature="12498:12564" placeholder="INSERT into donhang... " />
-            <marker date="1473764195473" expanded="true" signature="12785:12913" placeholder="UPDATE khach... " />
-            <marker date="1473764195473" expanded="true" signature="13055:13117" placeholder="UPDATE user " />
-            <marker date="1473764195473" expanded="true" signature="13249:13323" placeholder="INSERT into donhangct... " />
-            <marker date="1473764195473" expanded="true" signature="13433:13492" placeholder="SELECT ten_s... product" />
-            <marker date="1473764195473" expanded="true" signature="13638:13847" placeholder="select * fro... congty" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -380,7 +355,6 @@
     <entry file="file://$PROJECT_DIR$/khach-hang/blocks/footer.php" />
     <entry file="file://$PROJECT_DIR$/blocks/footer.php" />
     <entry file="file://$PROJECT_DIR$/khach-hang/blocks/footer.php" />
-    <entry file="file://$PROJECT_DIR$/lang/lang_en.php" />
     <entry file="file://$PROJECT_DIR$/page/danh-sach-cong-ty_theloai.php" />
     <entry file="file://$PROJECT_DIR$/ajax/xuly_dangnhap.php" />
     <entry file="file://$PROJECT_DIR$/page/tin-tuc.php">
@@ -404,81 +378,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/tim-kiem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="890">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/Model/Db.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1404">
           <caret line="78" column="55" selection-start-line="78" selection-start-column="55" selection-end-line="78" selection-end-column="55" />
-          <folding>
-            <marker date="1473764195473" expanded="true" signature="4832:4879" placeholder="..." />
-            <marker date="1473764195473" expanded="true" signature="4891:4909" placeholder="..." />
-            <marker date="1473764195473" expanded="true" signature="4928:4941" placeholder="..." />
-            <marker date="1473764195473" expanded="true" signature="6086:6121" placeholder="..." />
-            <marker date="1473764195473" expanded="true" signature="6133:6151" placeholder="..." />
-            <marker date="1473764195473" expanded="true" signature="6170:6183" placeholder="..." />
-            <marker date="1473764195473" expanded="true" signature="6500:6559" placeholder="SELECT * FRO... USER" />
-            <marker date="1473764195473" expanded="true" signature="6948:7020" placeholder="SELECT * FRO... user" />
-            <marker date="1473764195473" expanded="true" signature="7691:7763" placeholder="SELECT * FRO... user" />
-            <marker date="1473764195473" expanded="true" signature="8831:8901" placeholder="SELECT * FRO... user" />
-            <marker date="1473764195473" expanded="true" signature="10943:10992" placeholder="SELECT idKH khachhang" />
-            <marker date="1473764195473" expanded="true" signature="11239:11335" placeholder="INSERT into khachhang... " />
-            <marker date="1473764195473" expanded="true" signature="11552:11854" placeholder="INSERT into congty... " />
-            <marker date="1473764195473" expanded="true" signature="12044:12123" placeholder="INSERT into user... " />
-            <marker date="1473764195473" expanded="true" signature="12224:12264" placeholder="SELECT * FRO... user" />
-            <marker date="1473764195473" expanded="true" signature="12498:12564" placeholder="INSERT into donhang... " />
-            <marker date="1473764195473" expanded="true" signature="12785:12913" placeholder="UPDATE khach... " />
-            <marker date="1473764195473" expanded="true" signature="13055:13117" placeholder="UPDATE user " />
-            <marker date="1473764195473" expanded="true" signature="13249:13323" placeholder="INSERT into donhangct... " />
-            <marker date="1473764195473" expanded="true" signature="13433:13492" placeholder="SELECT ten_s... product" />
-            <marker date="1473764195473" expanded="true" signature="13638:13847" placeholder="select * fro... congty" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/Model/Congty.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2502">
-          <caret line="139" column="13" selection-start-line="139" selection-start-column="13" selection-end-line="139" selection-end-column="13" />
-          <folding>
-            <marker date="1474369848394" expanded="true" signature="107:166" placeholder="SELECT * FRO... category" />
-            <marker date="1474369848394" expanded="true" signature="309:348" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="520:564" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="791:845" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="990:1045" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="1217:1261" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="1518:1620" placeholder="SELECT congt... congty" />
-            <marker date="1474369848394" expanded="true" signature="1910:1987" placeholder="SELECT * FRO... cty_cate" />
-            <marker date="1474369848394" expanded="true" signature="2271:2310" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="2600:2739" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="3107:3246" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="3559:3696" placeholder="SELECT * FRO... cty_cate" />
-            <marker date="1474369848394" expanded="true" signature="3979:4018" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="4366:4531" placeholder="SELECT * FRO... cty_cate" />
-            <marker date="1474369848394" expanded="true" signature="4813:4852" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="5177:5491" placeholder="SELECT congt... congty" />
-            <marker date="1474369848394" expanded="true" signature="5912:6158" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="6616:6780" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="7339:7462" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="7947:8172" placeholder="SELECT * FRO... congty" />
-            <marker date="1474369848394" expanded="true" signature="8585:8700" placeholder="SELECT congt... congty" />
-            <marker date="1474369848394" expanded="true" signature="8886:9016" placeholder="SELECT congt... congty" />
-            <marker date="1474369848394" expanded="true" signature="9208:9355" placeholder="SELECT congt... congty" />
-            <marker date="1474369848394" expanded="true" signature="9512:9567" placeholder="SELECT cate_... category" />
-            <marker date="1474369848394" expanded="true" signature="9713:9752" placeholder="SELECT * FRO... category" />
-            <marker date="1474369848394" expanded="true" signature="9895:9935" placeholder="SELECT idTL category" />
-            <marker date="1474369848394" expanded="true" signature="11526:11861" placeholder="INSERT INTO congty... " />
-            <marker date="1474369848394" expanded="true" signature="13418:14036" placeholder="UPDATE congt... " />
-            <marker date="1474369848394" expanded="true" signature="14161:14198" placeholder="SELECT * FRO... user" />
-            <marker date="1474369848394" expanded="true" signature="14345:14381" placeholder="SELECT * FRO... khachhang" />
-            <marker date="1474369848394" expanded="true" signature="14976:15116" placeholder="UPDATE khach... " />
-            <marker date="1474369848394" expanded="true" signature="15587:15717" placeholder="INSERT INTO khachhang... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -486,7 +389,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -494,7 +396,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1980">
           <caret line="110" column="44" selection-start-line="110" selection-start-column="44" selection-end-line="110" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -502,10 +403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="36" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="36" />
-          <folding>
-            <marker date="1473764309957" expanded="true" signature="1494:1534" placeholder="SELECT idTL category" />
-            <marker date="1473764309957" expanded="true" signature="1659:1717" placeholder="INSERT INTO cty_cate... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -513,9 +410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="232" column="28" selection-start-line="232" selection-start-column="28" selection-end-line="232" selection-end-column="28" />
-          <folding>
-            <marker date="1474892585415" expanded="true" signature="18140:18167" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -523,7 +417,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8646">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -531,20 +424,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2754">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1473764205753" expanded="true" signature="6456:6503" placeholder="SELECT * FRO... quocgia" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/khach-hang/blocks/right.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2052">
-          <caret line="114" column="34" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
-          <folding>
-            <marker date="1475065059856" expanded="true" signature="170:209" placeholder="SELECT * fro... cty_cate" />
-            <marker date="1475065059856" expanded="true" signature="16084:16125" placeholder="SELECT * FRO... cty_cate" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -552,9 +431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="120" column="71" selection-start-line="120" selection-start-column="71" selection-end-line="120" selection-end-column="71" />
-          <folding>
-            <marker date="1474891956867" expanded="true" signature="16670:16708" placeholder="SELECT * FRO... blocks" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -562,12 +438,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
-          <folding>
-            <marker date="1475066126696" expanded="true" signature="1666:2435" placeholder="UPDATE congt... " />
-            <marker date="1475066126696" expanded="true" signature="2531:2570" placeholder="DELETE FROM " />
-            <marker date="1475066126696" expanded="true" signature="2788:2828" placeholder="SELECT idTL category" />
-            <marker date="1475066126696" expanded="true" signature="2994:3052" placeholder="INSERT INTO cty_cate... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -575,25 +445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/khach-hang/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="454" column="91" selection-start-line="454" selection-start-column="87" selection-end-line="454" selection-end-column="91" />
-          <folding>
-            <marker date="1475066193924" expanded="true" signature="4427:4476" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lang/lang_vi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="116" column="12" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -601,22 +452,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lang/lang_cn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="123" column="22" selection-start-line="123" selection-start-column="22" selection-end-line="123" selection-end-column="22" />
-          <folding>
-            <marker date="1475066542172" expanded="true" signature="3087:3097" placeholder="..." />
-            <marker date="1475066542172" expanded="true" signature="5029:5497" placeholder="..." />
-            <marker date="1475066542172" expanded="true" signature="5064:5104" placeholder="..." />
-            <marker date="1475066542172" expanded="true" signature="5138:5307" placeholder="..." />
-            <marker date="1475066542172" expanded="false" signature="5184:5217" placeholder="..." />
-            <marker date="1475066542172" expanded="true" signature="5382:5482" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -624,7 +459,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -632,7 +466,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-294">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -640,30 +473,115 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1098">
           <caret line="61" column="113" selection-start-line="61" selection-start-column="113" selection-end-line="61" selection-end-column="113" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#p#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#p#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#p#0;n#td#2;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1475066738692" expanded="true" signature="16:54" placeholder="SELECT * FRO... product" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blocks/test-menu-slide.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1506">
-          <caret line="498" column="0" selection-start-line="498" selection-start-column="0" selection-end-line="498" selection-end-column="0" />
-          <folding>
-            <marker date="1473764310313" expanded="true" signature="2725:2763" placeholder="SELECT * FRO... blocks" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
+        <state relative-caret-position="2502">
           <caret line="139" column="94" selection-start-line="139" selection-start-column="94" selection-end-line="139" selection-end-column="94" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/lang_en.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3618">
+          <caret line="201" column="2" selection-start-line="201" selection-start-column="2" selection-end-line="201" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/lang_cn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3762">
+          <caret line="209" column="0" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/test-menu-slide.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8964">
+          <caret line="498" column="0" selection-start-line="498" selection-start-column="0" selection-end-line="498" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/khach-hang/blocks/right.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6156">
+          <caret line="342" column="101" selection-start-line="342" selection-start-column="101" selection-end-line="342" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/khach-hang/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11718">
+          <caret line="651" column="84" selection-start-line="651" selection-start-column="84" selection-end-line="651" selection-end-column="84" />
+          <folding>
+            <marker date="1475714263018" expanded="true" signature="4427:4476" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/lang_vi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="205" column="17" selection-start-line="205" selection-start-column="17" selection-end-line="205" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/Model/Congty.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2664">
+          <caret line="148" column="9" selection-start-line="148" selection-start-column="9" selection-end-line="148" selection-end-column="9" />
+          <folding>
+            <marker date="1477019888661" expanded="true" signature="107:166" placeholder="SELECT * FRO... category" />
+            <marker date="1477019888661" expanded="true" signature="309:348" placeholder="SELECT * FRO... congty" />
+            <marker date="1477019888661" expanded="true" signature="520:564" placeholder="SELECT * FRO... congty" />
+            <marker date="1477019888661" expanded="true" signature="791:845" placeholder="SELECT * FRO... congty" />
+            <marker date="1477019888661" expanded="true" signature="990:1045" placeholder="SELECT * FRO... congty" />
+            <marker date="1477019888661" expanded="true" signature="1217:1261" placeholder="SELECT * FRO... congty" />
+            <marker date="1477019888661" expanded="true" signature="1518:1620" placeholder="SELECT congt... congty" />
+            <marker date="1477019888661" expanded="true" signature="1910:1987" placeholder="SELECT * FRO... cty_cate" />
+            <marker date="1477019888661" expanded="true" signature="2271:2310" placeholder="SELECT * FRO... congty" />
+            <marker date="1477019888661" expanded="true" signature="2600:2739" placeholder="SELECT * FRO... congty" />
+            <marker date="1477019888661" expanded="true" signature="3107:3246" placeholder="SELECT * FRO... congty" />
+            <marker date="1477019888661" expanded="true" signature="3559:3696" placeholder="SELECT * FRO... cty_cate" />
+            <marker date="1477019888661" expanded="true" signature="3979:4018" placeholder="SELECT * FRO... congty" />
+            <marker date="1477019888661" expanded="true" signature="4366:4531" placeholder="SELECT * FRO... cty_cate" />
+            <marker date="1477019888661" expanded="true" signature="4813:4852" placeholder="SELECT * FRO... congty" />
+            <marker date="1477019888661" expanded="true" signature="5177:5491" placeholder="SELECT congt... congty" />
+            <marker date="1477019888661" expanded="true" signature="5912:6158" placeholder="SELECT * FRO... congty" />
+            <marker date="1477019888661" expanded="true" signature="6616:6780" placeholder="SELECT * FRO... congty" />
+            <marker date="1477019888661" expanded="true" signature="7339:7462" placeholder="SELECT * FRO... congty" />
+            <marker date="1477019888661" expanded="true" signature="7947:8172" placeholder="SELECT * FRO... congty" />
+            <marker date="1477019888661" expanded="true" signature="8585:8700" placeholder="SELECT congt... congty" />
+            <marker date="1477019888661" expanded="true" signature="8886:9016" placeholder="SELECT congt... congty" />
+            <marker date="1477019888661" expanded="true" signature="9208:9355" placeholder="SELECT congt... congty" />
+            <marker date="1477019888661" expanded="true" signature="9512:9567" placeholder="SELECT cate_... category" />
+            <marker date="1477019888661" expanded="true" signature="9713:9752" placeholder="SELECT * FRO... category" />
+            <marker date="1477019888661" expanded="true" signature="9895:9935" placeholder="SELECT idTL category" />
+            <marker date="1477019888661" expanded="true" signature="11526:11861" placeholder="INSERT INTO congty... " />
+            <marker date="1477019888661" expanded="true" signature="13418:14036" placeholder="UPDATE congt... " />
+            <marker date="1477019888661" expanded="true" signature="14161:14198" placeholder="SELECT * FRO... user" />
+            <marker date="1477019888661" expanded="true" signature="14345:14381" placeholder="SELECT * FRO... khachhang" />
+            <marker date="1477019888661" expanded="true" signature="14976:15116" placeholder="UPDATE khach... " />
+            <marker date="1477019888661" expanded="true" signature="15587:15717" placeholder="INSERT INTO khachhang... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/tim-kiem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+          <folding>
+            <marker date="1477272685357" expanded="true" signature="11316:11349" placeholder="..." />
+            <marker date="1477272685357" expanded="true" signature="13766:13799" placeholder="..." />
+            <marker date="1477272685357" expanded="true" signature="22476:22509" placeholder="..." />
+            <marker date="1477272685357" expanded="true" signature="23100:23133" placeholder="..." />
+            <marker date="1477272685357" expanded="true" signature="28864:28897" placeholder="..." />
+            <marker date="1477272685357" expanded="true" signature="29480:29513" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
