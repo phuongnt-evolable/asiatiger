@@ -7,7 +7,5 @@
 		$_SESSION['back']= $_SERVER['REQUEST_URI'];
 		$_SESSION['error']= "Bạn chưa đăng nhập";
 		header("location: dangnhap.php");
-	}else{
-		echo $_SESSION['user_id']; die();
 	}
 ?>

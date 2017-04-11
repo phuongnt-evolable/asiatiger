@@ -13,9 +13,7 @@ $idTL1=$_POST['idTL'];
 $ten_cty_cn = $d->processData($_POST['ten_cty_cn']);
 $ten_cty_vi = $d->processData($_POST['ten_cty_vi']);
 $ten_cty_en = $d->processData($_POST['ten_cty_en']);
-$nha_dau_tu_en = $d->processData($_POST['nha_dau_tu_en']);
-$nha_dau_tu_vi = $d->processData($_POST['nha_dau_tu_vi']);
-$nha_dau_tu_cn = $d->processData($_POST['nha_dau_tu_cn']);
+$nha_dau_tu = $d->processData($_POST['nha_dau_tu']);
 $quocgia = $d->processData($_POST['quocgia']);
 $diachi_cn = $d->processData($_POST['diachi_cn']);
 $diachi_vi = $d->processData($_POST['diachi_vi']);
@@ -43,7 +41,7 @@ $spchinh_en=$_POST['spchinh_en'];
 $congty_name_alias = $d->changeTitle($ten_cty_vi);
 
         echo $sql = "UPDATE congty
-                SET top='$top',ShopVip='$shopvip', TenCT_cn = '$ten_cty_cn',TenCT_vi = '$ten_cty_vi',TenCT_en = '$ten_cty_en',ten_khong_dau='$congty_name_alias',NhaDauTu_vi = '$nha_dau_tu_vi',NhaDauTu_cn = '$nha_dau_tu_cn',NhaDauTu_en = '$nha_dau_tu_en',NguoiLienHe='$nguoilienhe',Skype='$skype',QQ='$qq',idQuocGia='$quocgia',DiaChi_cn = '$diachi_cn',DiaChi_vi = '$diachi_vi',DiaChi_en = '$diachi_en',DiDong='$didong',DienThoai = '$dienthoai',Fax = '$fax',Email = '$email',Website = '$website',MoTa_cn = '$mota_cn',MoTa_vi = '$mota_vi',MoTa_en = '$mota_en',GioiThieu_cn = '$gioithieu_cn',GioiThieu_vi = '$gioithieu_vi',GioiThieu_en = '$gioithieu_en',HinhDaiDien = '$url_images',cate_id = '$category_id',SanPhamChinh_vi='$spchinh_vi',SanPhamChinh_cn='$spchinh_cn',SanPhamChinh_en='$spchinh_en'
+                SET top='$top',ShopVip='$shopvip', TenCT_cn = '$ten_cty_cn',TenCT_vi = '$ten_cty_vi',TenCT_en = '$ten_cty_en',ten_khong_dau='$congty_name_alias',NhaDauTu = '$nha_dau_tu',NguoiLienHe='$nguoilienhe',Skype='$skype',QQ='$qq',idQuocGia='$quocgia',DiaChi_cn = '$diachi_cn',DiaChi_vi = '$diachi_vi',DiaChi_en = '$diachi_en',DiDong='$didong',DienThoai = '$dienthoai',Fax = '$fax',Email = '$email',Website = '$website',MoTa_cn = '$mota_cn',MoTa_vi = '$mota_vi',MoTa_en = '$mota_en',GioiThieu_cn = '$gioithieu_cn',GioiThieu_vi = '$gioithieu_vi',GioiThieu_en = '$gioithieu_en',HinhDaiDien = '$url_images',cate_id = '$category_id',SanPhamChinh_vi='$spchinh_vi',SanPhamChinh_cn='$spchinh_cn',SanPhamChinh_en='$spchinh_en'
                 WHERE congty_id = $congty_id";
         mysql_query($sql) or die(mysql_error() . $sql); 
         

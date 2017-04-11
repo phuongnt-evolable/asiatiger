@@ -100,7 +100,7 @@ class Product extends Db {
         return $rs;
     }
     function getListProductByTheLoai($idTL = -1, $offset = -1, $limit = -1) {
-        $sql = "SELECT * FROM product WHERE category_id = $idTL   OR idTL = -1 ";  
+        $sql = "SELECT * FROM product WHERE category_id = $idTL   OR idTL = -1 ";
         if ($limit > 0 && $offset >= 0)
             $sql .= " LIMIT $offset,$limit";
         $rs = mysql_query($sql) or die(mysql_error());

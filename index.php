@@ -87,7 +87,7 @@
         <?php include 'blocks/ajax-file.php'; ?>
 
 </head>
-	<body data-spm="7224109" class="sw-layout-w1180">
+	<body data-spm="7224109" class="sw-layout-w1180" oncopy="return false" oncut="return false" onpaste="return false">
 
             <script type="text/javascript" src="static/beacon_en.js"></script>
             <script type="text/javascript">var dmtrack_c='{ali_resin_trace=nuser=Y}'; var dmtrack_pageid='734d46017f0000011414460248'; sk_dmtracking();</script>

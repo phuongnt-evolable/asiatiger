@@ -584,7 +584,9 @@
 
                                     </p>
 
-
+                                        <?php
+                                            if(isset($_SESSION['idUser'])){
+                                        ?>
                                     <?php //if($row['DiaChi_'.$lang]!=''){ ?><p><strong>{diachi}: </strong><?php echo $row['DiaChi_'.$lang]; ?></p><?php //} ?>
 
                                     <?php //if($row['DienThoai']!=''){ ?><p><strong>{dienthoai}: </strong> <?php echo $row['DienThoai'];?></p><?php//} ?>
@@ -597,9 +599,10 @@
 
                                     <?php //if($row['DiDong']!=''){ ?><p><strong>{didong}: </strong> <?php echo $row['DiDong'];?></p><?php //} ?>
 
+                                    <?php } ?>
                                     <?php //if($row_qg['TenQuocGia_'.$lang]!=''){ ?><p><strong>{quocgia}: </strong> <?php  echo $row_qg['TenQuocGia_'.$lang];?></p><?php //} ?>
 
-                                    <?php //if($row['NhaDauTu_'.$lang]!=''){ ?><p><strong>{nhadautu}: </strong> <?php  echo $row['NhaDauTu_'.$lang];?></p><?php //} ?>
+                                    <?php //if($row['NhaDauTu_'.$lang]!=''){ ?><p><strong>{nhadautu}: </strong> <?php  if ($row['NhaDauTu'] == $row_qg['idQuocGia']) { echo $row_qg['TenQuocGia_'.$lang]; } ?></p><?php //} ?>
 
                                     <!--<ul class="pro-ser-icon">
 

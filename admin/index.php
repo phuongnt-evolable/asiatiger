@@ -1,7 +1,11 @@
 <?php
 require_once "lib/defined.php";
 ?>
+
 <?php
+if (!ini_get('display_errors')) {
+    ini_set('display_errors', '1');
+}
 session_start();
 $lang_arr=array("vi","cn");
     if (isset($_GET['lang']) == true){
@@ -15,7 +19,7 @@ $lang_arr=array("vi","cn");
     ob_start();
        //echo $lang; die;
 include "lang/lang_$lang.php";
-//require_once "checkLogin.php";
+require_once "checkLogin.php";
 require_once("Model/Menu.php");
 require_once("Model/Cate.php");
 require_once("Model/QuocGia.php");
@@ -26,6 +30,8 @@ require_once("Model/Home.php");
 require_once("Model/DonHang.php");
 require_once("Model/Congty.php");
 require_once("lib/class.user.php");
+require_once("Model/CsvHelper.php");
+require_once("Model/goodby/csv/vendor/autoload.php");
 
 $modelMenu = new Menu;
 $modelArticle = new Article;
@@ -37,6 +43,7 @@ $modelQuocgia = new Quocgia;
 $modelDonHang = new DonHang;
 $modelCongTy = new Congty;
 $modelUser = new user;
+$modelCsvHelper = new \utilities\CsvHelper;
 
 $com = (isset($_GET['com'])) ? $_GET['com'] : "";
 ?>
@@ -53,17 +60,20 @@ $com = (isset($_GET['com'])) ? $_GET['com'] : "";
         <link rel="stylesheet" type="text/css" href="resources/css/style_full.css" />
         <link id="color" rel="stylesheet" type="text/css" href="resources/css/colors/blue.css" />
         <!-- scripts (jquery) -->
-        <script src="resources/scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
+        <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
         <!--[if IE]><script language="javascript" type="text/javascript" src="resources/scripts/excanvas.min.js"></script><![endif]-->
         <script src="resources/scripts/jquery-ui-1.8.custom.min.js" type="text/javascript"></script>
 
         <script src="resources/scripts/tiny_mce/jquery.tinymce.js" type="text/javascript"></script>
         <!-- scripts (custom) -->
-        <script src="resources/scripts/smooth.js" type="text/javascript"></script>
+        <!--<script src="resources/scripts/smooth.js" type="text/javascript"></script>
         <script src="resources/scripts/smooth.menu.js" type="text/javascript"></script>
         <script src="resources/scripts/smooth.table.js" type="text/javascript"></script>
         <script src="resources/scripts/smooth.dialog.js" type="text/javascript"></script>
-        <script src="resources/scripts/smooth.autocomplete.js" type="text/javascript"></script>
+        <script src="resources/scripts/smooth.autocomplete.js" type="text/javascript"></script>-->
+        <link rel="stylesheet" type="text/css" href="css/datepicker.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-min.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css" />
 
         <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
         <script type="text/javascript" src="ckfinder/ckfinder.js"></script>
@@ -107,9 +117,8 @@ $com = (isset($_GET['com'])) ? $_GET['com'] : "";
 			var ten_cty_cn=$("#ten_cty_cn").val();
                         var ten_cty_vi=$("#ten_cty_vi").val();
                         var ten_cty_en=$("#ten_cty_en").val();
-            var nha_dau_tu_vi=$("#nha_dau_tu_vi").val();
-            var nha_dau_tu_en=$("#nha_dau_tu_en").val();
-            var nha_dau_tu_cn=$("#nha_dau_tu_cn").val();
+            var nha_dau_tu=$("#nha_dau_tu").val();
+
                         var url_images=$("#url_images").val();
 			var diachi_cn=$("#diachi_cn").val();
                         var diachi_vi=$("#diachi_vi").val();
@@ -184,10 +193,10 @@ $com = (isset($_GET['com'])) ? $_GET['com'] : "";
 			else
 			{	
                                 $("#thongbao").html('<div align="center"><img src="../img/loading.gif" /> Vui lòng đợi trong giây lát !</div>');
-                                $.post('ajax/xuly_themcty.php',{top:top,shopvip:shopvip,ten_cty_cn:ten_cty_cn,ten_cty_vi:ten_cty_vi,ten_cty_en:ten_cty_en,nha_dau_tu_vi:nha_dau_tu_vi,nha_dau_tu_en:nha_dau_tu_en,nha_dau_tu_cn:nha_dau_tu_cn,url_images:url_images,diachi_cn:diachi_cn,diachi_vi:diachi_vi,diachi_en:diachi_en,quocgia:quocgia,dienthoai:dienthoai,fax:fax,email:email,nguoilienhe:nguoilienhe,skype:skype,qq:qq,didong:didong,website:website,spchinh_vi:spchinh_vi,spchinh_cn:spchinh_cn,spchinh_en:spchinh_en,gioithieu_cn:gioithieu_cn,gioithieu_vi:gioithieu_vi,gioithieu_en:gioithieu_en,cate_id:cate_id,idTL:idTL},function(data){
+                                $.post('ajax/xuly_themcty.php',{top:top,shopvip:shopvip,ten_cty_cn:ten_cty_cn,ten_cty_vi:ten_cty_vi,ten_cty_en:ten_cty_en,nha_dau_tu:nha_dau_tu,url_images:url_images,diachi_cn:diachi_cn,diachi_vi:diachi_vi,diachi_en:diachi_en,quocgia:quocgia,dienthoai:dienthoai,fax:fax,email:email,nguoilienhe:nguoilienhe,skype:skype,qq:qq,didong:didong,website:website,spchinh_vi:spchinh_vi,spchinh_cn:spchinh_cn,spchinh_en:spchinh_en,gioithieu_cn:gioithieu_cn,gioithieu_vi:gioithieu_vi,gioithieu_en:gioithieu_en,cate_id:cate_id,idTL:idTL},function(data){
                                     alert('Xử lý thành công!');
                                    // window.location.reload();
-                                   setTimeout(function(){window.location.href='index.php?com=congty_list';},1000);		
+                                   setTimeout(function(){window.location.href='index.php?com=congty_list';},1000);
                                 });
 				//alert("Chúc mừng bạn đã đã đăng ký thành viên thành công. !!! ");
 				//return true;
@@ -204,9 +213,7 @@ $com = (isset($_GET['com'])) ? $_GET['com'] : "";
 			var ten_cty_cn=$("#ten_cty_cn").val();
                         var ten_cty_vi=$("#ten_cty_vi").val();
                         var ten_cty_en=$("#ten_cty_en").val();
-            var nha_dau_tu_vi=$("#nha_dau_tu_vi").val();
-            var nha_dau_tu_en=$("#nha_dau_tu_en").val();
-            var nha_dau_tu_cn=$("#nha_dau_tu_cn").val();
+            var nha_dau_tu=$("#nha_dau_tu").val();
                         var url_images=$("#url_images").val();
 			var diachi_cn=$("#diachi_cn").val();
                         var diachi_vi=$("#diachi_vi").val();
@@ -278,7 +285,7 @@ $com = (isset($_GET['com'])) ? $_GET['com'] : "";
 			else
 			{	
                                 $("#thongbao").html('<div align="center"><img src="../img/loading.gif" /> Vui lòng đợi trong giây lát !</div>');
-                                $.post('ajax/xuly_updatecty.php',{top:top,shopvip:shopvip,congty_id:congty_id,ten_cty_cn:ten_cty_cn,ten_cty_vi:ten_cty_vi,ten_cty_en:ten_cty_en,nha_dau_tu_vi:nha_dau_tu_vi,nha_dau_tu_en:nha_dau_tu_en,nha_dau_tu_cn:nha_dau_tu_cn,url_images:url_images,diachi_cn:diachi_cn,diachi_vi:diachi_vi,diachi_en:diachi_en,quocgia:quocgia,dienthoai:dienthoai,fax:fax,email:email,nguoilienhe:nguoilienhe,skype:skype,qq:qq,didong:didong,website:website,spchinh_vi:spchinh_vi,spchinh_cn:spchinh_cn,spchinh_en:spchinh_en,gioithieu_cn:gioithieu_cn,gioithieu_vi:gioithieu_vi,gioithieu_en:gioithieu_en,cate_id:jsonString,idTL:idTL},function(data){
+                                $.post('ajax/xuly_updatecty.php',{top:top,shopvip:shopvip,congty_id:congty_id,ten_cty_cn:ten_cty_cn,ten_cty_vi:ten_cty_vi,ten_cty_en:ten_cty_en,nha_dau_tu:nha_dau_tu,url_images:url_images,diachi_cn:diachi_cn,diachi_vi:diachi_vi,diachi_en:diachi_en,quocgia:quocgia,dienthoai:dienthoai,fax:fax,email:email,nguoilienhe:nguoilienhe,skype:skype,qq:qq,didong:didong,website:website,spchinh_vi:spchinh_vi,spchinh_cn:spchinh_cn,spchinh_en:spchinh_en,gioithieu_cn:gioithieu_cn,gioithieu_vi:gioithieu_vi,gioithieu_en:gioithieu_en,cate_id:jsonString,idTL:idTL},function(data){
                                     alert('Update thành công!');
                                     //window.location.reload();
                                    setTimeout(function(){window.location.href='index.php?com=congty_list';},100);		
@@ -522,5 +529,7 @@ $com = (isset($_GET['com'])) ? $_GET['com'] : "";
             
             echo $str;
         ?>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap-datepicker.min.js" type="text/javascript"></script>
     </body>
 </html>

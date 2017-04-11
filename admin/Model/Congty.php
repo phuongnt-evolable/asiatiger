@@ -122,6 +122,57 @@ class Congty extends Db {
         }        
         return $arrReturn;
     }
+
+    /**
+     * @param array $condition
+     * @return resource
+     */
+    function countTotalCompanyByCondition(array $condition){
+        $sql = "SELECT  COUNT(*) as total
+                FROM  cty_cate a, congty b 
+                WHERE a.congty_id = b.congty_id";
+
+        if (!empty($condition['idTL'])){
+            $sql .= " AND a.idTL =".$condition['idTL'];
+        }
+        if (!empty($condition['cate_id'])){
+            $sql .= " AND a.cate_id =".$condition['cate_id'];
+        }
+        if (!empty($condition['idQuocGia'])){
+            $sql .= " AND b.idQuocGia =".$condition['idQuocGia'];
+        }
+        $rs = mysql_query($sql) or die(mysql_error());
+        $total_record = mysql_fetch_assoc($rs);
+        return $total_record;
+    }
+
+    /**
+     * @param array $condition
+     * @return array
+     */
+    public function getListCongTyByCondition(array $condition){
+        $arrReturn = array();
+        $sql = "SELECT  b.*
+                FROM  cty_cate a, congty b 
+                WHERE a.congty_id = b.congty_id ";
+
+        if (!empty($condition['idTL'])){
+            $sql .= " AND a.idTL =".$condition['idTL'];
+        }
+        if (!empty($condition['idQuocGia'])){
+            $sql .= " AND b.idQuocGia =".$condition['idQuocGia'];
+        }
+        $sql .= " ORDER BY b.top DESC, b.HinhDaiDien DESC ";
+        if ($condition['limit'] > 0 && $condition['offset'] >= 0) {
+            $sql .= " LIMIT " . $condition['offset'] . ',' . $condition['limit'];
+        }
+        $rs = mysql_query($sql) or die(mysql_error());
+        while($row = mysql_fetch_assoc($rs)){
+            $congty_id = $row['congty_id'];
+            $arrReturn[$congty_id]= $row;
+        }
+        return $arrReturn;
+    }
    
     function getCountSumaryCongTyByCondition($tukhoa,$lang,$offset = -1, $limit = -1){
         $arrReturn = array();
@@ -339,7 +390,7 @@ class Congty extends Db {
                     VALUES(NULL,'$fullname','$email','$pass','$dienthoai','$diachi','$ngaysinh','','','','')";
         mysql_query($sql) or die(mysql_error() . $sql);
     }
-
+    
 }
 
 ?>

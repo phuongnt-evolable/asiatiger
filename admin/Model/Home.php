@@ -200,6 +200,24 @@ class Home extends Db{
 			}
 		}
 
+		public function getIdHinhRightHome($category_id,$offset,$limit){
+			
+			$sql = "SELECT * FROM hinhanh_home WHERE idLoaiHinh = $category_id AND show_home = 1 ORDER BY idHinh DESC";
+
+			if($limit > 0 && $offset >=0)  $sql .= " LIMIT $offset,$limit";
+			$rs = mysql_query($sql) or die(mysql_error());
+			
+			$count = mysql_num_rows($rs);
+			if($count > 0){
+				while($row = mysql_fetch_assoc($rs)){
+					$id_hinh[] = $row['idHinh'];
+				}
+				return $id_hinh;
+			}else{
+				return $id_hinh = array();
+			}
+		}
+
 		function getDetailImageHomeByIdHinh($idHinh) {
 			$sql = "SELECT * FROM hinhanh_home WHERE idHinh = $idHinh";
 			$rs = mysql_query($sql) or die(mysql_error());

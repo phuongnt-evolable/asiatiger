@@ -166,16 +166,18 @@ if (isset($_POST['btnSave'])) {
                         </select></td>
                 </tr>
                 <tr class="left">
-                    <td>Nhà đầu tư cn</td>
-                    <td><input type="text" name="nha_dau_tu_cn" id="nha_dau_tu_cn" style="width:500px;height:25px"  value="<?php echo $row['NhaDauTu_cn']; ?>"/></td>
-                </tr>
-                <tr class="left">
-                    <td>Nhà đầu tư vi </td>
-                    <td><input type="text" name="nha_dau_tu_vi" id="nha_dau_tu_vi" style="width:500px;height:25px" value="<?php echo $row['NhaDauTu_vi']; ?>"/></td>
-                </tr>
-                <tr class="left">
-                    <td>Nhà đầu tư en</td>
-                    <td><input type="text" name="nha_dau_tu_en" id="nha_dau_tu_en" style="width:500px;height:25px" value="<?php echo $row['NhaDauTu_en']; ?>"/></td>
+                    <td width="100px">Nhà đầu tư</td>
+                    <td><select name='nha_dau_tu' id="nha_dau_tu">
+                            <option value='0'>----Chọn----</option>
+                            <?php
+                            $quocgia = $modelQuocgia->getAllQuocGia();
+                            while ($row_qg = mysql_fetch_assoc($quocgia)) {
+                                // $idTL=$row_cha['idTL'];
+                                ?>
+                                <option <?php echo ($row['NhaDauTu'] == $row_qg['idQuocGia']) ? "selected" : ""; ?> value="<?php echo $row_qg['idQuocGia'] ?>"><?php echo $row_qg['TenQuocGia_' . $lang] ?></option>
+
+                            <?php } ?>
+                        </select></td>
                 </tr>
                 <tr class="left">
                     <td>{diachi}_cn</td>

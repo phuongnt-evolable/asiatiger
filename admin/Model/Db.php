@@ -1,6 +1,7 @@
 <?php
 
 require_once('PHPMailer/class.phpmailer.php');
+require_once('PHPMailer/class.phpmailer.php');
 define('GUSER', 'asiatiger.info@gmail.com');
 define('GPWD', 'ofniregitaisa');
 class db {
@@ -184,9 +185,7 @@ class db {
 		} else  header("location:dangnhap.php");
 	}
         function XuLyLogin($email, $password){
-                        $email = $_POST['email'];
-                        $pass = $_POST['password'];
-                        $password = md5($pass);
+             $password = md5($password);
 			 $qr = mysql_query("SELECT * FROM user
 				WHERE User = '$email' 
 				AND Pass = '$password'
@@ -312,7 +311,7 @@ class db {
 		mysql_query($sql) or die(mysql_error().$sql);
 	}
         function insertCongTy($tencty,$ten_khong_dau,$nguoidaidien,$address,$idquocgia,$didong,$nhadautu,$phone,$fax,$website,$email,$spchinh,$nhantb){
-		 $sql = "INSERT into congty VALUES (NULL,'','','$nhantb','$tencty','$tencty','$tencty','$ten_khong_dau','$nhadautu','$nhadautu','$nhadautu','$nguoidaidien','','','','$idquocgia','$address','$address','$address','$phone','$didong','$fax','$email','$website','','','','','','','','$spchinh','$spchinh','$spchinh')";
+		 $sql = "INSERT into congty VALUES (NULL,'','','$nhantb','$tencty','$tencty','$tencty','$ten_khong_dau','$nhadautu','$nguoidaidien','','','','$idquocgia','$address','$address','$address','$phone','$didong','$fax','$email','$website','','','','','','','','$spchinh','$spchinh','$spchinh')";
 		mysql_query($sql) or die(mysql_error().$sql);
 	}
         function insertUser($congty_id,$user,$email,$pass){		
@@ -422,6 +421,137 @@ class db {
                 echo $sub . (($len < strlen($str)) ? '...' : '');
             }
 
+    /**
+     * @return array
+     */
+    public function generateTemplate()
+    {
+        $tmp = array();
+        $tmp['COMPANY_NAME'] = "";
+        $tmp['INVESTORS'] = "";
+        $tmp['CONTACT_PEOPLE'] = "";
+        $tmp['SKYPE'] = "";
+        $tmp['QQ'] = "";
+        $tmp['CAREER'] = "";
+        $tmp['COUNTRY'] = "";
+        $tmp['ADDRESS'] = "";
+        $tmp['PHONE'] = "";
+        $tmp['TELEPHONE'] = "";
+        $tmp['FAX'] = "";
+        $tmp['EMAIL'] = "";
+        $tmp['WEBSITE'] = "";
+        $tmp['DESCRIBE'] = "";
+        $tmp['MAIN_PRODUCT'] = "";
+
+        return $tmp;
+    }
+
+    /**
+     * @param $export_data
+     * @return array
+     */
+    public function generateContent($export_data)
+    {
+        $tmp = array();
+        $tmp['COMPANY_NAME'] = "Tên công ty";
+        $tmp['INVESTORS'] = "Nhà đầu tư";
+        $tmp['CONTACT_PEOPLE'] = "Người liên hệ";
+        $tmp['SKYPE'] = "Skype";
+        $tmp['QQ'] = "Qq";
+        $tmp['CAREER'] = "Nghành nghề";
+        $tmp['COUNTRY'] = "Quốc gia";
+        $tmp['ADDRESS'] = "Địa chỉ";
+        $tmp['PHONE'] = "Điện thoại";
+        $tmp['TELEPHONE'] = "Di động";
+        $tmp['FAX'] = "Fax";
+        $tmp['EMAIL'] = "Email";
+        $tmp['WEBSITE'] = "Website";
+        $tmp['DESCRIBE'] = "Mô tả";
+        $tmp['MAIN_PRODUCT'] = "Sản phẩm chính";
+        $data[] = $tmp;
+
+        foreach ($export_data as $v) {
+            $tmp = array();
+            $tmp['COMPANY_NAME'] = $v['TenCT_vi'];
+            $tmp['INVESTORS'] = $v['NhaDauTu'];
+            $tmp['CONTACT_PEOPLE'] = $v['NguoiLienHe'];
+            $tmp['SKYPE'] = $v["Skype"];
+            $tmp['QQ'] = $v['QQ'];
+            $tmp['CAREER'] = $v['cate_id'];
+            $tmp['COUNTRY'] = $v['idQuocGia'];
+            $tmp['ADDRESS'] = $v['DiaChi_vi'];
+            $tmp['PHONE'] = $v['DienThoai'];
+            $tmp['TELEPHONE'] = $v['DiDong'];
+            $tmp['FAX'] = $v['Fax'];
+            $tmp['EMAIL'] = $v["Email"];
+            $tmp['WEBSITE'] = $v["Website"];
+            $tmp['DESCRIBE'] = $v['MoTa_vi'];
+            $tmp['MAIN_PRODUCT'] = $v['SanPhamChinh_vi'];
+            $data[] = $tmp;
+        }
+        return $data;
+    }
+
+    /**
+     * @param $csv_data
+     * @return array
+     */
+    public static function generateCsvTemplate($csv_data)
+    {
+        $tmp = array();
+        $tmp[] = "Data list all company";
+        $csv_data[] = $tmp;
+
+        $tmp = array();
+        $tmp[] = 'Tên công ty';
+        $tmp[] = 'Nhà đầu tư';
+        $tmp[] = 'Người liên hệ';
+        $tmp[] = 'Skype';
+        $tmp[] = 'Qq';
+        $tmp[] = 'Nghành nghề';
+        $tmp[] = 'Quốc gia';
+        $tmp[] = 'Địa chỉ';
+        $tmp[] = 'Điện thoại';
+        $tmp[] = 'Di động';
+        $tmp[] = 'Fax';
+        $tmp[] = 'Email';
+        $tmp[] = 'Website';
+        $tmp[] = 'Mô tả';
+        $tmp[] = 'Sản phẩm chính';
+
+        $csv_data[] = $tmp;
+        return $csv_data;
+    }
+
+    /**
+     * @param $csv_data
+     * @param $all_data_list
+     * @return array
+     */
+    public static function generateCsvContent($csv_data, $all_data_list)
+    {
+        foreach ($all_data_list as $v) {
+            $tmp = array();
+            $tmp['COMPANY_NAME'] = $v['TenCT_vi'];
+            $tmp['INVESTORS'] = $v['NhaDauTu'];
+            $tmp['CONTACT_PEOPLE'] = $v['NguoiLienHe'];
+            $tmp['SKYPE'] = $v["Skype"];
+            $tmp['QQ'] = $v['QQ'];
+            $tmp['CAREER'] = $v['cate_id'];
+            $tmp['COUNTRY'] = $v['idQuocGia'];
+            $tmp['ADDRESS'] = $v['DiaChi_vi'];
+            $tmp['PHONE'] = $v['DienThoai'];
+            $tmp['TELEPHONE'] = $v['DiDong'];
+            $tmp['FAX'] = $v['Fax'];
+            $tmp['EMAIL'] = $v["Email"];
+            $tmp['WEBSITE'] = $v["Website"];
+            $tmp['DESCRIBE'] = $v['MoTa_vi'];
+            $tmp['MAIN_PRODUCT'] = $v['SanPhamChinh_vi'];
+
+            $csv_data[] = $tmp;
+        }
+        return $csv_data;
+    }
 }
 
 ?>

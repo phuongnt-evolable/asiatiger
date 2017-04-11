@@ -71,5 +71,12 @@
                         
                 </ul>
         </li>
+        <li>
+                <a href="#" title="Products"><span class="icon"><img src="resources/images/icons/application_double.png" alt="Menu" /></span><span>Xuất file excel</span></a>
+                <ul>
+                        <li><a href="<?php echo BASE_URL.'excel_congty_list'; ?>">Danh sách công ty</a></li>
+
+                </ul>
+        </li>
         
 </ul>

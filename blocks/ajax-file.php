@@ -610,4 +610,7 @@ function chkcontrol(j) {
             showItems: 4
         }); 
     });
+
+    // prevent click right mouse
+    document.addEventListener('contextmenu', event => event.preventDefault());
  </script>

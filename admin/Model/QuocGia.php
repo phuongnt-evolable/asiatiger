@@ -90,6 +90,28 @@ class Quocgia extends Db {
           $sql = "INSERT INTO theloai VALUES(NULL,'$tl_name_cn','$tl_name_vi','$tl_name_en','$tl_alias')";								
         mysql_query($sql) or die(mysql_error() . $sql);
     }
+
+    /**
+     * @param array $condition
+     * @return resource
+     */
+    public function getListQuocGiaByCondition(array $condition){
+        $sql = "SELECT COUNT( b.idQuocGia ) as total , b . *
+                FROM congty a, quocgia b, cty_cate c
+                WHERE a.idQuocGia = b.idQuocGia
+                AND a.congty_id = c.congty_id";
+        if (!empty($condition['idTL'])){
+            $sql .= " AND c.idTL =".$condition['idTL'];
+        }
+
+        // Position this condition should put last, because it can cause error data
+        if (!empty($condition['nha_dau_tu']) && $condition['nha_dau_tu'] == 1){
+            $sql .= " AND a.NhaDauTu = b.idQuocGia";
+        }
+        $sql .= " GROUP BY a.idQuocGia";
+        $rs = mysql_query($sql) or die(mysql_error());
+        return $rs;
+    }
 }
 
 ?>
